@@ -1,0 +1,563 @@
+
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(231, 243, 239);
+    margin: 0;
+}
+
+.navbar{
+padding-left: 10px;
+margin:0px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items:center;
+background-color: #adc0b8;
+margin-top: 0%;
+background-size: cover;
+font-size:x-large;
+}
+
+.navbar img{
+    max-width: 100px;
+    padding-left: 10px;
+
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-left: 10px;
+    margin:0px;
+    
+}
+
+li{
+list-style: none;
+padding: 1em;
+
+}
+
+.navbar a{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.banner{
+   padding: 0%;
+   margin: 0%;
+   max-width: 500%;
+    overflow: hidden;
+    background-image: url(images/bannernovi.png);
+    background-repeat:repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.banner img{
+    padding-left: 0px;
+    padding-right: 50px;
+    
+}
+
+.banner img:hover{
+    -webkit-filter: drop-shadow(1px 2px 1px rgb(0, 187, 1710));
+    filter: drop-shadow(4px 4px 7px rgb(0, 187, 171)); 
+}
+
+.banner h1{
+    font-size: 70px;
+    margin-left: 150px;
+    padding-right: 250px;
+}
+
+.banner h1:hover{
+    text-shadow: 5px 2px 3px rgba(0, 187, 171, 1);  
+
+}
+.navItems a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navItems:hover{
+    text-shadow: 5px 2px 3px rgba(0, 187, 171, 1);  
+}
+
+.logo:hover {
+    -webkit-filter: drop-shadow(1px 2px 1px rgb(0, 187, 1710));
+    filter: drop-shadow(1px 2px 1px rgb(0, 187, 171)); 
+}
+
+
+
+.fora{
+    max-width: 700px;
+    display: flex;
+    align-items:center;
+    margin-left: 10px;
+    
+
+}
+
+.foraIpasus img:hover{
+    -webkit-filter: drop-shadow(1px 2px 1px rgb(0, 187, 1710));
+    filter: drop-shadow(1px 2px 1px rgb(0, 187, 171)); 
+}
+
+.foraIpasus{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 180px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #adc0b8;
+    padding-right: 20px;
+        
+}
+
+
+
+
+
+.pasus{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    padding-top: 10px;
+    text-align: center;
+    padding-right: 20px;
+
+}
+
+.h2pasus{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2:hover{
+    text-shadow: 5px 2px 3px rgba(0, 187, 171, 1);  
+
+}
+
+
+.about{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    padding-top: 200px;
+}
+
+
+
+.kontenijer{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding-top: 10px;
+    padding-bottom: 180px;
+    margin-right: 20px;
+    margin-left: 70px;
+    background-color: rgb(237,237,238);
+    text-align: center;
+
+}
+
+.kontenijer img{
+    max-width: 700px;
+    padding-right: 20px;
+}
+
+.kontenijer img:hover{
+   
+    -webkit-filter: drop-shadow(1px 2px 1px rgb(0, 187, 1710));
+    filter: drop-shadow(1px 2px 1px rgb(0, 187, 171)); 
+    
+}
+
+.slike{ max-width: 300px;}
+
+
+.idkVise{
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    background-color: #adc0b8;
+    background-image: url("/images/test.png");
+   
+
+}
+
+
+.mainfooter{
+    background-color: #adc0b8;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 30px;
+}
+
+.contact{
+    background-color: rgb(237,237,238);
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    
+    
+}
+
+.formtypes{
+    padding: 10px;
+    
+    
+}
+.prvaDva{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.drugaDva{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+.dugme{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 100px;
+    height: 50px;
+    margin-top: 19px;
+    
+}
+
+button{
+    padding: 23px;
+    margin-top: 10px;
+    padding-bottom: 40px;
+    padding-top: 12px;
+    border: none;
+    color: black;
+    background-image: linear-gradient(to right, #669262 0%, #3f725e 51%, #628f92 100%);
+    flex: 1 1 1;
+    transition: 0.5s;
+    background-size: 200% auto; 
+    border-radius: 10px;
+    
+}
+
+
+.airplane{
+padding-left: 20px;        
+margin-top: 13px;
+}
+
+button:hover{
+    background-position: right center;
+}
+
+input[type=email]{
+    -webkit-appearance: none;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: rgb(114, 201, 223) solid 1px;
+}
+
+input[type=email]:focus{
+    border: none;
+    outline: none;
+}
+
+input[type=text]{
+    -webkit-appearance: none;
+    width: 300px;
+    height: 50px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    border-bottom: rgb(114, 201, 223) solid 1px;
+
+}
+input[type=text]:focus{
+    border: none;
+    outline: none;
+    
+}
+
+input[type=message]{
+    -webkit-appearance: none;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+
+.msg input[type=text] {
+    -webkit-appearance: none;
+    width: 630px;
+    height: 50px;
+    color: black;
+    background-color: transparent;
+    justify-content: center;
+}
+
+.msg{
+    display: flex;
+    justify-content: center;
+}
+
+textarea{
+    -webkit-appearance: none;
+    width: 533px;
+    height: 50px;
+    color: black;
+    background-color: transparent;
+    justify-content: center;
+    border: none;
+    border-bottom: rgb(114, 201, 223) solid 1px;
+    margin-bottom: -23px;
+}
+
+textarea:focus{
+    border: none;
+    outline: none;
+}
+
+  /***********************************/
+
+
+  a.underlinewooshNav{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+a.underlinewooshNav:before{
+    display: block;
+    content: "";
+    position:inherit;
+    width: 0;
+    height: 2px;
+    bottom: -104px;
+    left: 0;
+    background-color: rgb(0, 187, 171);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a.underlinewooshNav:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+  /***********************************/
+
+
+  p.underlinewoosh{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+p.underlinewoosh:before{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -20px;
+    left: 0;
+    background-color: rgb(141, 219, 92);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+p.underlinewoosh:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+
+
+p.underlinewooshContact{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+p.underlinewooshContact:before{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3.5px;
+    bottom: 0px;
+    left: 0;
+    background-color: rgb(141, 219, 92);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+p.underlinewooshContact:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+
+
+  
+.projektiIslova{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    justify-self: center;
+    border: 20px solid rgb(237,237,238);
+    background-color: #203a2b59;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    width: 500px;
+    height: 487px;
+}
+
+.projektiIslova p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.projektiIslova h3{
+    background-color: rgb(237,237,238);
+    padding: 0px;
+    margin: 0px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.projektiIslova:hover{
+    background-color: #203a2b59;
+    transition: ease-in-out 0.5s all;
+    transform: scale(1.03);
+        box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    
+}
+
+
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.projects img{
+    
+    align-self: center;
+}
+
+a.underlinewooshNaslovi{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+a.underlinewooshNaslovi:before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -7px;
+    left: 0;
+    background-color: rgb(0, 187, 171);
+    visibility: hidden;
+    transform:scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+a.underlinewooshNaslovi:hover:before {
+    visibility: visible;
+    transform:scaleX(7);
+  }
+
+  .mainfooter p:hover{
+    text-shadow: 5px 2px 3px rgba(0, 187, 171, 1);  
+  }
+
+
+.testest{
+    background-image: url(images/test-Copy.png);
+    width: 100%;
+    height: 270px;
+
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+.testest180{
+    background-image: url(images/test180.png);
+    width: 100%;
+    height: 350px;
+    background-position: top;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+
+.testest180{
+    background-image: url(images/testnavbar.png);
+    width: 100%;
+margin-top: -150px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
