@@ -17,12 +17,13 @@ background-color: #adc0b8;
 margin-top: 0%;
 background-size: cover;
 font-size:x-large;
+padding-right: 20px;
 }
 
 .navbar img{
     max-width: 100px;
-    padding-left: 10px;
-
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 h3{
@@ -62,12 +63,14 @@ padding: 1em;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-left: 50px;
+
 }
 
 .banner img{
     padding-left: 0px;
     padding-right: 50px;
-    
+    max-width: 500px;
 }
 
 .banner img:hover{
@@ -519,11 +522,11 @@ a.underlinewooshNaslovi:before{
     transform:scaleX(0);
     transition: all 0.3s ease-in-out;
 }
-
+/*
 a.underlinewooshNaslovi:hover:before {
     visibility: visible;
     transform:scaleX(7);
-  }
+  } */
 
   .mainfooter p:hover{
     text-shadow: 5px 2px 3px rgba(0, 187, 171, 1);  
@@ -561,3 +564,82 @@ margin-top: -150px;
     padding-bottom: 0%;
     margin-bottom: 0%;
 }
+
+.bRonlyATmedia{
+    display: none ;
+}
+
+/***************************************************************
+***************************RESPONSIVE***************************
+****************************************************************
+***************************************************************/
+
+@media (max-width: 500px) {
+    .navbar{
+        padding-left: 0px;
+        margin:0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        background-color: #000000;
+        margin-top: 0px;
+        background-size: cover;
+        padding-right: 0px;
+        padding: 0%;
+        margin: 0%;
+        }
+        
+    .navbar img{
+            max-width: 100px;
+        }
+
+    body{
+            padding: 0%;
+            margin: 0%;
+        }
+    body img {
+            max-width: 25px;
+        }
+
+    .banner{
+            padding: 0%;
+            margin: 0%;
+            max-width: 100%;
+             overflow: hidden;
+             background-image: url(images/bannernovi.png);
+             background-repeat:repeat;
+             display: flex;
+             flex-direction: row;
+             align-items:center;
+             padding-left: 0px;    
+             margin-left: 0px;
+             margin-right: 0px; 
+             padding-right: 0px;   
+             margin-right: 0px; 
+
+         }
+
+        
+    .banner img{
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: 250px;
+        margin-left: -30px;
+        margin-right: 0px;
+        padding-right: 0px;
+        }
+        
+    .banner h1{
+        font-size: 7vh;
+        padding: 0px 0px 0px 0px;
+        padding-right: 0px;
+        margin-left: 1em;
+        
+    }
+
+    .bRonlyATmedia {
+        display: block;
+    }
+
+    }
