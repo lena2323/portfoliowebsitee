@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(231, 243, 239);
+    background-color: #adc0b8;
     margin: 0;
 }
 
@@ -173,8 +173,8 @@ h2:hover{
     align-items:center;
     padding-top: 10px;
     padding-bottom: 180px;
-    margin-right: 20px;
-    margin-left: 70px;
+    padding-right: 20px;
+    padding-left: 70px;
     background-color: rgb(237,237,238);
     text-align: center;
 
@@ -206,6 +206,13 @@ h2:hover{
 
 }
 
+.textInProjects{
+position: relative;
+text-decoration: none;
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+}
 
 .mainfooter{
     background-color: #adc0b8;
@@ -458,6 +465,25 @@ p.underlinewooshContact:hover:before {
     height: 487px;
 }
 
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.projects img{
+    
+    align-self: center;
+}
+
 .projektiIslova p{
     padding-left: 20px;
     padding-right: 20px;
@@ -483,23 +509,6 @@ p.underlinewooshContact:hover:before {
 
 
 
-.projects{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    text-align: center;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-}
-
-.projects img{
-    
-    align-self: center;
-}
 
 a.underlinewooshNaslovi{
     position: relative;
@@ -543,6 +552,7 @@ a.underlinewooshNaslovi:hover:before {
     padding-bottom: 0%;
     margin-bottom: 0%;
 }
+
 .testest180{
     background-image: url(images/test180.png);
     width: 100%;
@@ -574,7 +584,7 @@ margin-top: -150px;
 ****************************************************************
 ***************************************************************/
 
-@media (max-width: 500px) {
+@media (min-width:300px) and (max-width: 900px) {
     .navbar{
         padding-left: 0px;
         margin:0px;
@@ -641,5 +651,247 @@ margin-top: -150px;
     .bRonlyATmedia {
         display: block;
     }
+
+
+
+
+
+
+    .pasus{
+        text-align: left;
+    }
+
+    .fora{
+        max-width: 400px;
+        display: flex;
+        align-items:center;
+        margin-left: -30px;
+
+    
+    }
+    
+    .foraIpasus{
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 180px;
+        margin-left: 50px;
+        background-color: #adc0b8;
+        padding-right: 20px;
+        max-width: 700px;   
+    }
+
+
+
+    
+.about{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    padding-top: 200px;
+    text-align: left;
+}
+
+
+
+.kontenijer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 0px;
+    padding-bottom: 180px;
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    padding-left: 40px;
+    background-color: rgb(237,237,238);
+    text-align: center;
+    max-width: 1000px;
+    padding-bottom: 0px;
+  
+}
+
+.kontenijer img{
+    margin-top:80px;
+    max-width: 400px;
+    padding-right: 20px;
+
+}
+
+
+
+.projektiIslova{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    justify-self: center;
+    border: 20px solid rgb(237,237,238);
+    background-color: #203a2b59;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    max-width: 300px;
+    max-height: 487px;
+}
+
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    gap:30px;
+
+}
+
+
+.idkVise{
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 0px;
+    padding-bottom: 100px;
+    background-color: #adc0b8;
+    background-image: url("/images/test.png");
+   margin-top: -30px;
+
+}
+
+
+.contact{
+    background-color: rgb(237,237,238);
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
+
+.prvaDva{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.msg{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+}
+
+.drugaDva{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.dugme{
+    display: flex;
+    flex-direction: row;
+    max-width: 100px;
+    max-height: 50px;
+    margin-top: 19px;
+   
+
+    
+}
+
+
+/*****************************************/
+/**Testing forms*/
+/*****************************************/
+
+
+
+
+input[type=email]{
+    -webkit-appearance: none;
+    width: 419px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: rgb(114, 201, 223) solid 1px;
+}
+
+input[type=text]{
+    -webkit-appearance: none;
+    width: 419px;
+    height: 50px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    border-bottom: rgb(114, 201, 223) solid 1px;
+
+}
+
+
+.msg input[type=text] {
+    -webkit-appearance: none;
+    width: 419px;
+    height: 50px;
+    color: black;
+    background-color: transparent;
+    justify-content: center;
+}
+
+
+textarea{
+    -webkit-appearance: none;
+    width: 419px;
+    height: 50px;
+    color: black;
+    background-color: transparent;
+    justify-content: center;
+    border: none;
+    border-bottom: rgb(114, 201, 223) solid 1px;
+    margin-bottom: -23px;
+}
+
+
+/*****************************************/
+
+
+.dugme{
+    display: flex;
+    align-content:flex-end;
+    min-width: 765px;
+    max-height: 100px;
+    margin-top: 19px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+}
+
+button{
+    padding: 23px;
+    padding-bottom: 40px;
+    padding-top: 12px;
+    border: none;
+    color: black;
+    background-image: linear-gradient(to right, #669262 0%, #3f725e 51%, #628f92 100%);
+    flex: 1 1 1;
+    transition: 0.5s;
+    background-size: 200% auto; 
+    border-radius: 10px;
+    width: 100px;
+    
+}
 
     }
