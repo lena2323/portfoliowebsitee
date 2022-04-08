@@ -591,7 +591,9 @@ margin-top: -150px;
 ****************************************************************
 ***************************************************************/
 
-@media (min-width:300px) and (max-width: 900px) {
+/*@media (min-width:300px) and (max-width: 900px)*/ 
+
+@media only screen and (max-width: 768px){
     .navbar{
         padding-left: 0px;
         margin:0px;
