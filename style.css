@@ -874,7 +874,7 @@ margin-top: -150px;
         flex-direction: column;
         text-align: center;
         justify-self: center;
-        border: 20px solid rgb(237,237,238);
+        border: 14px solid rgb(237,237,238);
         background-color: #adc0b8;
         margin-left: 20px;
         margin-right: 20px;
@@ -934,6 +934,7 @@ margin-top: -150px;
         background-color: #adc0b8;
 
 }
+
 
 
 }
