@@ -881,7 +881,7 @@ margin-top: -150px;
         margin-top: 0px;
         max-width: 200px;
         max-height: 420px;
-        
+        margin-bottom: 40px;
         }
     
         .textInProjects h3{
@@ -902,9 +902,8 @@ margin-top: -150px;
         padding-left: 50px;
         padding-top: 20px;
         padding-bottom: 40px;
-        gap:30px;
         max-width: 200px;
-
+            
         }
     
         .projects img{
