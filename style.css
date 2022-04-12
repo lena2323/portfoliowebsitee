@@ -870,7 +870,6 @@ margin-top: -150px;
     
     .projektiIslova{
         display: flex;
-        justify-content: center;
         flex-direction: column;
         text-align: center;
         border: 25px solid rgb(237,237,238);
@@ -922,9 +921,7 @@ margin-top: -150px;
         }
     
         .idkVise{
-        /*margin-left: 0%;
-        margin-right: 0%; */
-        margin: auto;
+        
         padding-top: 0px;
         padding-bottom: 100px;
         background-color: #adc0b8;
