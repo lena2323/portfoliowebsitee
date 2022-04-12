@@ -221,6 +221,47 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 20px;
 }
 
+.projects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.projects img{
+    
+    align-self: center;
+}
+
+.projektiIslova p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.projektiIslova h3{
+    background-color: rgb(237,237,238);
+    padding: 0px;
+    margin: 0px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.projektiIslova:hover{
+    background-color: #203a2b59;
+    transition: ease-in-out 0.5s all;
+    transform: scale(1.03);
+        box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    
+}
+
 .mainfooter{
     background-color: #adc0b8;
     font-family: 'Times New Roman', Times, serif;
@@ -473,46 +514,7 @@ p.underlinewooshContact:hover:before {
 }
 
 
-.projects{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    text-align: center;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-}
 
-.projects img{
-    
-    align-self: center;
-}
-
-.projektiIslova p{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.projektiIslova h3{
-    background-color: rgb(237,237,238);
-    padding: 0px;
-    margin: 0px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-.projektiIslova:hover{
-    background-color: #203a2b59;
-    transition: ease-in-out 0.5s all;
-    transform: scale(1.03);
-        box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.4);
-        z-index: 1;
-    
-}
 
 
 
@@ -730,59 +732,6 @@ margin-top: -150px;
 
 
 
-    .projektiIslova{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    justify-self: center;
-    border: 20px solid rgb(237,237,238);
-    background-color: #adc0b8;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0px;
-    max-width: 200px;
-    max-height: 420px;
-    }
-
-    .textInProjects h3{
-        max-width: 200px;
-        background-color: none; 
-        padding: 0%;   }
-
-    .projects{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0px;
-    text-align: center;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    gap:30px;
-    max-width: 200px;
-
-    }
-
-    .projects img{
-        max-width:200px
-        
-    }
-
-    .idkVise{
-    /*margin-left: 0%;
-    margin-right: 0%; */
-    margin: auto;
-    padding-top: 0px;
-    padding-bottom: 100px;
-    background-color: #adc0b8;
-    background-image: url("/images/test.png");
-    margin-top: -30px;
-    max-width: 200px;
-
-    }
 
 
     .contact{
@@ -839,7 +788,7 @@ margin-top: -150px;
 
     input[type=email]{
     -webkit-appearance: none;
-    max-width: 200px;
+    max-width: 300px;
     height: 50px;
     background-color: transparent;
     border: none;
@@ -848,7 +797,7 @@ margin-top: -150px;
 
     input[type=text]{
         -webkit-appearance: none;
-        max-width: 200px;
+        max-width: 300px;
         height: 50px;
         color: black;
         background-color: transparent;
@@ -860,7 +809,7 @@ margin-top: -150px;
 
     .msg input[type=text] {
         -webkit-appearance: none;
-        max-width: 200px;
+        max-width: 300px;
         height: 50px;
         color: black;
         background-color: transparent;
@@ -870,7 +819,7 @@ margin-top: -150px;
 
     textarea{
         -webkit-appearance: none;
-        max-width: 200px;
+        max-width: 300px;
         height: 50px;
         color: black;
         background-color: transparent;
@@ -913,5 +862,78 @@ margin-top: -150px;
     .idkVise p{
         background-color: #adc0b8;
     }
+
+    /*****************************************/
+    /****************PROJECTS*****************/
+    /*****************************************/
+
+    
+    .projektiIslova{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        justify-self: center;
+        border: 20px solid rgb(237,237,238);
+        background-color: #adc0b8;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0px;
+        max-width: 200px;
+        max-height: 420px;
+        
+        }
+    
+        .textInProjects h3{
+            max-width: 200px;
+            background-color: none; 
+            padding: 0%;  
+            padding-top: 7px; 
+        }
+    
+        .projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        text-align: center;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        gap:30px;
+        max-width: 200px;
+
+        }
+    
+        .projects img{
+            max-width:200px
+            
+        }
+    
+        .idkVise{
+        /*margin-left: 0%;
+        margin-right: 0%; */
+        margin: auto;
+        padding-top: 0px;
+        padding-bottom: 100px;
+        background-color: #adc0b8;
+        background-image: url("/images/test.png");
+        margin-top: -30px;
+        max-width: 200px;
+        
+        }
+
+        
+.projektiIslova:hover{
+    transition: ease-in-out 0.5s all;
+    transform: scale(1.03);
+        box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        background-color: #adc0b8;
+
+}
+
 
 }
