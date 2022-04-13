@@ -11,6 +11,7 @@ padding-left: 10px;
 margin:0px;
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
 justify-content: space-between;
 align-items:center;
 background-color: #adc0b8;
@@ -311,7 +312,10 @@ font-size: 20px;
     
 }
 
-button{
+
+.airplane{
+    padding-left: 20px;        
+    margin-top: 13px;
     padding: 23px;
     margin-top: 10px;
     padding-bottom: 40px;
@@ -323,13 +327,6 @@ button{
     transition: 0.5s;
     background-size: 200% auto; 
     border-radius: 10px;
-    
-}
-
-
-.airplane{
-padding-left: 20px;        
-margin-top: 13px;
 }
 
 button:hover{
@@ -542,11 +539,6 @@ a.underlinewooshNaslovi:before{
     transform:scaleX(0);
     transition: all 0.3s ease-in-out;
 }
-/*
-a.underlinewooshNaslovi:hover:before {
-    visibility: visible;
-    transform:scaleX(7);
-  } */
 
   .mainfooter p:hover{
     text-shadow: 5px 2px 3px rgba(0, 187, 171, 1);  
@@ -565,30 +557,52 @@ a.underlinewooshNaslovi:hover:before {
 }
 
 .testest180{
-    background-image: url(images/test180.png);
-    width: 100%;
-    height: 350px;
-    background-position: top;
-    background-size:cover;
-    background-repeat: no-repeat;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
-}
-
-
-.testest180{
     background-image: url(images/testnavbar.png);
     width: 100%;
-margin-top: -150px;
+    margin-top: -150px;
     background-size:cover;
-    background-repeat: no-repeat;
     padding-bottom: 0%;
     margin-bottom: 0%;
+    height: 350px;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    
 }
+
+.testestNAV{
+    background-image: url(images/testnavbar.png);
+    width: 100%;
+    margin-top: -150px;
+    background-size:cover;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    height: 350px;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
 
 .bRonlyATmedia{
     display: none ;
 }
+
+/****************HAMBURGER****************/
+
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+/****************HAMBURGER****************/
+
 
 /***************************************************************
 ***************************RESPONSIVE***************************
@@ -605,17 +619,63 @@ margin-top: -150px;
         flex-direction: row;
         justify-content: space-between;
         align-items:center;
-        background-color: #000000;
+        background-color: transparent;
         margin-top: 0px;
         background-size: cover;
         padding-right: 0px;
         padding: 0%;
         margin: 0%;
+        text-align: right;
+
     }
         
     .navbar img{
             min-width: 20px;
         }
+
+/****************HAMBURGER****************/
+.nav-ul{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+
+
+}
+
+.nav-ul.show{
+    display: flex;
+
+}
+
+.hamburger{
+    display: block;
+    padding-right: 30px;
+    
+}
+
+
+
+
+
+.navItems a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navItems:hover{
+    text-shadow: 5px 2px 3px rgba(0, 187, 171, 1);  
+}
+
+
+
+.logo:hover {
+    -webkit-filter: drop-shadow(1px 2px 1px rgb(0, 187, 1710));
+    filter: drop-shadow(1px 2px 1px rgb(0, 187, 171)); 
+}
+/****************HAMBURGER****************/
+
 
     body{
             padding: 0%;
@@ -773,21 +833,6 @@ margin-top: -150px;
 
     }
 
-    .dugme{
-        display: flex;
-        flex-direction: row;
-        max-width: 100px;
-        max-height: 50px;
-        margin-top: 19px;
-    
-
-        
-    }
-
-
-
-
-
     input[type=email]{
     -webkit-appearance: none;
     max-width: 300px;
@@ -843,10 +888,14 @@ margin-top: -150px;
         margin-top: 19px;
         margin-top: 0px;
         margin-bottom: 20px;
-
+        display: flex;
+        flex-direction: row;
+        max-width: 100px;
+        max-height: 50px;
+        margin-top: 19px;
     }
 
-    button{
+    .airplane{
         padding: 23px;
         padding-bottom: 40px;
         padding-top: 12px;
@@ -895,21 +944,23 @@ margin-top: -150px;
            display: block;
         }
 
-        .projects{
+        .idkVise{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin: auto;
+        }
+
+    .projects{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         margin-bottom: 0px;
-        text-align: center;
         padding-right: 0px;
         padding-left: 0px;
-        margin: auto;
         padding-top: 20px;
         padding-bottom: 40px;
-        max-width: 200px;
-            
-        }
+
+        } 
     
         .projects img{
             max-width:200px
@@ -925,14 +976,6 @@ margin-top: -150px;
             margin-top: 10px;
         }
     
-        .idkVise{
-        
-        padding-top: 0px;
-        padding-bottom: 100px;
-        background-color: #adc0b8;
-        margin-top: -30px;
-        
-        }
 
         
 .projektiIslova:hover{
