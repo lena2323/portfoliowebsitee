@@ -687,7 +687,6 @@ a.underlinewooshNaslovi:before{
 
     .banner{
         padding: 0%;
-        max-width: 100%;
         margin: auto;
         overflow: hidden;
         background-image: url(images/bannernovi.png);
@@ -696,21 +695,20 @@ a.underlinewooshNaslovi:before{
         flex-direction: column-reverse;
         align-items:center;
         justify-content: center;
-        padding-left: 0px;   
         padding-bottom: 30px; 
-         }
+        }
 
         
     .banner img{
         padding-left: 0px;
         padding-right: 0px;
-        max-width: 500px;
+        max-width: 400px;
         margin: auto;
         padding-right: 0px;
         }
         
     .banner h1{
-        font-size: 10vh;
+        font-size: 7vh;
         padding: 0px 0px 0px 0px;
         padding-right: 0px;
         margin-left: 1em;
@@ -941,6 +939,7 @@ a.underlinewooshNaslovi:before{
             margin-top: 7px; 
            text-align: center;
            display: block;
+           padding-bottom: 4px;
         }
 
         .idkVise{
