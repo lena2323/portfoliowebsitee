@@ -693,24 +693,24 @@ a.underlinewooshNaslovi:before{
         background-image: url(images/bannernovi.png);
         background-repeat:repeat;
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
         align-items:center;
         justify-content: center;
-        padding-left: 0px;    
+        padding-left: 0px;   
+        padding-bottom: 30px; 
          }
 
         
     .banner img{
         padding-left: 0px;
         padding-right: 0px;
-        max-width: 250px;
-        margin-left: -30px;
-        margin-right: 0px;
+        max-width: 500px;
+        margin: auto;
         padding-right: 0px;
         }
         
     .banner h1{
-        font-size: 5vh;
+        font-size: 10vh;
         padding: 0px 0px 0px 0px;
         padding-right: 0px;
         margin-left: 1em;
@@ -726,11 +726,10 @@ a.underlinewooshNaslovi:before{
     }
 
     .fora{
-        max-width: 200px;
+        max-width: 300px;
         display: flex;
         align-items:center;
-        margin-left: -30px;
-
+        margin: auto;
     
     }
     
@@ -787,7 +786,7 @@ a.underlinewooshNaslovi:before{
 
     .kontenijer img{
     margin-top:80px;
-    max-width: 200px;
+    max-width: 300px;
     padding-right: 20px;
 
     }
@@ -930,7 +929,7 @@ a.underlinewooshNaslovi:before{
         margin-top: 0px;
         max-width: 228px;
         max-height: 420px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
 
         }
     
