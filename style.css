@@ -272,6 +272,27 @@ font-size: 20px;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+.mainfooter img{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+.testest{
+    background-image: url(images/test-Copy.png);
+    width: 100%;
+    height: 270px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+
 }
 
 .contact{
@@ -548,16 +569,6 @@ a.underlinewooshNaslovi:before{
   }
 
 
-.testest{
-    background-image: url(images/test-Copy.png);
-    width: 100%;
-    height: 270px;
-
-    background-size:cover;
-    background-repeat: no-repeat;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
-}
 
 .testest180{
     background-image: url(images/testnavbar.png);
@@ -604,6 +615,7 @@ a.underlinewooshNaslovi:before{
 .hamburger:focus{
     outline: none;
 }
+
 /****************HAMBURGER****************/
 
 
@@ -990,6 +1002,16 @@ a.underlinewooshNaslovi:before{
 .slike{ max-width: 300px;
 padding-top: 40px;}
 
+.mainfooter img{
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 100px;
+}
+
+.mainfooter{
+    position: relative;
+    margin-top: -90px;
+}
 
 
 }
