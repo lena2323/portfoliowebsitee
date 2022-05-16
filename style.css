@@ -12,7 +12,7 @@ margin:0px;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: center;
 align-items:center;
 background-color: #adc0b8;
 margin-top: 0%;
@@ -56,7 +56,7 @@ padding: 1em;
 
 .banner{
    padding: 0%;
-   margin: 0%;
+   margin: auto;
    max-width: 500%;
     overflow: hidden;
     background-image: url(images/bannernovi.png);
@@ -64,14 +64,15 @@ padding: 1em;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 50px;
+    padding-left: 300px;
 
 }
 
 .banner img{
     padding-left: 0px;
-    padding-right: 50px;
+    padding-right: 400px;
     max-width: 500px;
+    margin: auto;
 }
 
 .banner img:hover{
@@ -82,7 +83,7 @@ padding: 1em;
 .banner h1{
     font-size: 70px;
     margin-left: 150px;
-    padding-right: 250px;
+    padding-right: 0px;
 }
 
 .banner h1:hover{
@@ -132,7 +133,6 @@ padding: 1em;
     margin-left: 0px;
     background-color: #adc0b8;
     padding-right: 20px;
-        
 }
 
 
@@ -245,7 +245,8 @@ font-size: 20px;
 .projektiIslova p{
     padding-left: 20px;
     padding-right: 20px;
-    
+    text-align: justify;        
+
 }
 
 .projektiIslova h3{
@@ -255,6 +256,7 @@ font-size: 20px;
     padding-top: 40px;
     padding-bottom: 20px;
     text-align: center;
+    
 }
 
 .projektiIslova:hover{
@@ -357,7 +359,7 @@ button:hover{
     background-position: right center;
 }
 
-button:active{
+.airplane:active{
     background-image: linear-gradient(to right, #638174 0%, rgb(237,237,238) 60%, #638174 100%);
 }
 
@@ -598,6 +600,7 @@ a.underlinewooshNaslovi:before{
     height: 350px;
     background-position: top;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /****************HAMBURGER****************/
