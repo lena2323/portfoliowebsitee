@@ -668,7 +668,23 @@ a.underlinewooshNaslovi:before{
   }
   
   
-  
+.scroll-up-button-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0px;
+    margin-right: 20px;
+    text-align: end;
+}
+.scroll-up-button-container a{
+    text-decoration: none;
+
+}
+.scroll-up-button-container img{
+    max-width: 70px;
+
+}
+
 /****************************/
 
 
