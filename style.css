@@ -71,8 +71,8 @@ padding: 1em;
     justify-content: center;
 }
 /*****Testing scrolling animation*******/
-.scrolled.fade-in {
-    animation: fade-in 1s ease-in-out both;
+.scrolled.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in-out both;
   }
 
   .js-scroll {
@@ -85,11 +85,13 @@ padding: 1em;
   }
 
 
-  @keyframes fade-in {
+  @keyframes fade-in-bottom {
     0% {
+      transform: translateY(50px);
       opacity: 0;
     }
     100% {
+      transform: translateY(0);
       opacity: 1;
     }
   }
