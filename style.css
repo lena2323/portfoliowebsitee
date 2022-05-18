@@ -248,7 +248,7 @@ h2:hover{
     padding-top: 20px;
     padding-bottom: 10px;
     background-color: #adc0b8;
-
+  
 }
 
 .textInProjects{
@@ -271,6 +271,8 @@ h2:hover{
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -292,7 +294,7 @@ h2:hover{
     margin-top: 0px;
     width: 500px;
     height: 487px;
-
+    margin-bottom: 20px;
 }
 
 .projektiIslova p{
