@@ -717,16 +717,15 @@ a.underlinewooshNaslovi:before{
     .navbar{
         display: flex;
         flex-direction: column;
-        text-align: right;
-        background-color: transparent;
-        background-size: cover;
         margin: auto;
         align-items: flex-end;
         text-align: right;
-        background-image: url(images/Picture1.png);
+        background-image: url(images/Picture33.png);
         background-color: transparent;
-        padding-top:20px;
-        background-position: center;
+        background-position: bottom;
+        margin-top: 0px;
+        padding-top: 0px;
+        margin-top: -200px;
     }
 
 
@@ -734,6 +733,7 @@ a.underlinewooshNaslovi:before{
     .navbar img{
             min-width: 20px;
             display: none;
+
         }
 
 /****************HAMBURGER****************/
@@ -747,7 +747,9 @@ a.underlinewooshNaslovi:before{
 .nav-ul.show{
     display: flex;
     width: auto;
-    padding-bottom: 200px;
+    padding: 0%;
+    margin: 0%;
+
 }
 
 .hamburger{
@@ -755,7 +757,10 @@ a.underlinewooshNaslovi:before{
     padding-right: 30px;
     padding-bottom: 20px;
     position: sticky;
-        top: 20;
+}
+
+.navbar button{
+    padding-top: 220px;
 }
 
 
@@ -763,6 +768,7 @@ a.underlinewooshNaslovi:before{
 
 
 .navItems a{
+
     position: relative;
     text-decoration: none;
     color: black;
