@@ -29,12 +29,17 @@ padding-right: 20px;
 position: fixed;
 width: 100%;
 z-index: 100;
+padding-top: 20px;
 }
 
 .navbar img{
     max-width: 100px;
     padding-left: 20px;
     padding-top: 10px;
+    margin-top: -30px;
+    margin-bottom: 0px;
+
+
 }
 
 h3{
@@ -50,7 +55,8 @@ ul{
     padding-top: 3px;
     padding-left: 10px;
     margin:0px;
-    
+    margin-top: -40px;
+
 }
 
 li{
@@ -229,6 +235,10 @@ h2:hover{
     
 }
 
+/*****************************************/
+/****************PROJECTS*****************/
+/*****************************************/
+
 .slike{ max-width: 300px;}
 
 
@@ -242,11 +252,11 @@ h2:hover{
 }
 
 .textInProjects{
-position: relative;
-text-decoration: none;
-color: black;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 20px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 
 }
 
@@ -267,6 +277,22 @@ font-size: 20px;
 .projects img{
     
     align-self: center;
+}
+
+.projektiIslova{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    justify-self: center;
+    border: 20px solid rgb(237,237,238);
+    background-color: #203a2b59;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    width: 500px;
+    height: 487px;
+
 }
 
 .projektiIslova p{
@@ -290,10 +316,18 @@ font-size: 20px;
     background-color: #203a2b59;
     transition: ease-in-out 0.5s all;
     transform: scale(1.03);
-        box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.4);
-        z-index: 1;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
+/*****************************************/
+/*****************************************/
+/*****************************************/
 
+
+
+/*****************************************/
+/****************FOOTER*****************/
+/*****************************************/
 .mainfooter{
     background-color: #adc0b8;
     font-family: 'Times New Roman', Times, serif;
@@ -312,6 +346,12 @@ font-size: 20px;
 }
 
 
+
+
+
+/*****************************************/
+/****************FORMS*****************/
+/*****************************************/
 .contact{
     background-color: rgb(237,237,238);
     padding: 20px;
@@ -448,7 +488,10 @@ textarea:focus{
     outline: none;
 }
 
-  /***********************************/
+  
+/*****************************************/
+/*****************************************/
+/*****************************************/
 
 
   a.underlinewooshNav{
@@ -536,32 +579,6 @@ p.underlinewooshContact:hover:before {
     visibility: visible;
     width: 100%;
   }
-
-
-
-  
-.projektiIslova{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    justify-self: center;
-    border: 20px solid rgb(237,237,238);
-    background-color: #203a2b59;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0px;
-    width: 500px;
-    height: 487px;
-    border-radius: 10px;
-
-}
-
-
-
-
-
-
 
 a.underlinewooshNaslovi{
     position: relative;
@@ -665,7 +682,6 @@ a.underlinewooshNaslovi:before{
 
 
 
-/****************************/
 /****************HAMBURGER****************/
 
 .bRonlyATmedia{
@@ -684,6 +700,10 @@ a.underlinewooshNaslovi:before{
 .hamburger:focus{
     outline: none;
 }
+
+/****************HAMBURGER****************/
+
+
 /************ANIMATION****************/
 
   
@@ -704,10 +724,9 @@ a.underlinewooshNaslovi:before{
     max-width: 70px;
 
 }
+/************ANIMATION****************/
 
-/****************************/
 
-/****************HAMBURGER****************/
 
 /***************************************************************
 ***************************RESPONSIVE***************************
@@ -807,18 +826,11 @@ a.underlinewooshNaslovi:before{
         flex-direction: column-reverse;
         align-items:center;
         justify-content: center;
-        padding-bottom: 30px; 
-        padding-top: 150px;
+        padding-bottom: 130px; 
+        padding-top: 250px;
         }
 
         
-    .banner img{
-        padding-left: 0px;
-        padding-right: 0px;
-        max-width: 400px;
-        margin: auto;
-        padding-right: 0px;
-        }
         
     .banner h1{
         font-size: 7vh;
@@ -1019,10 +1031,6 @@ a.underlinewooshNaslovi:before{
         
     }
 
-    .idkVise p{
-        background-color: #adc0b8;
-    }
-
     /*****************************************/
     /****************PROJECTS*****************/
     /*****************************************/
@@ -1043,22 +1051,28 @@ a.underlinewooshNaslovi:before{
 
         }
     
-        .textInProjects {
-            max-width: 228px;
-            max-height: 28px;
-            background-color: rgb(237,237,238); 
-            padding: 5px;  
-            margin-top: 7px; 
-           text-align: center;
-           display: block;
-        }
+    .textInProjects {
+        max-width: 228px;
+        max-height: 28px;
+        background-color: rgb(237,237,238); 
+        padding: 5px;  
+        margin-top: 7px; 
+        text-align: center;
+        display: block;
+    }
 
-        .idkVise{
-            display: flex;
-            position: relative;
-            justify-content: center;
-            margin: auto;
-        }
+    .idkVise{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin: auto;
+    }
+
+        
+    .idkVise p{
+    background-color: #adc0b8;
+    }
+
 
     .projects{
         display: flex;
@@ -1071,30 +1085,34 @@ a.underlinewooshNaslovi:before{
 
         } 
     
-        .projects img{
-            max-width:200px
-            
-        }
+    .projects img{
+        max-width:200px
+        
+    }
 
-        .projektiIslova h3{
-            padding: 0%;
-            max-width: 228px;
-            margin-block-start: 0em;
-            margin-block-end: 0em;
-            width: 100%;
-            margin-top: 10px;
-        }
+    .projektiIslova h3{
+        padding: 0%;
+        max-width: 228px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        width: 100%;
+        margin-top: 10px;
+    }
     
 
         
 .projektiIslova:hover{
     transition: ease-in-out 0.5s all;
     transform: scale(1.03);
-        box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.4);
-        z-index: 1;
-        background-color: #adc0b8;
-
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    background-color: #adc0b8;
 }
+
+    /*****************************************/
+    /****************PROJECTS*****************/
+    /*****************************************/
+
 
 .slike{ max-width: 300px;
 padding-top: 40px;}
