@@ -1048,7 +1048,7 @@ a.underlinewooshNaslovi:before{
         margin: auto;
         margin-top: 0px;
         max-width: 228px;
-        max-height: 420px;
+        max-height: auto;
         margin-bottom: 30px;
 
         }
@@ -1061,6 +1061,7 @@ a.underlinewooshNaslovi:before{
         margin-top: 7px; 
         text-align: center;
         display: block;
+        justify-content: center;
     }
 
     .idkVise{
@@ -1092,14 +1093,15 @@ a.underlinewooshNaslovi:before{
         
     }
 
-    .projektiIslova h3{
+    .textInProjects h3{
         padding: 0%;
-        max-width: 228px;
-        margin-block-start: 0em;
-        margin-block-end: 0em;
         width: 100%;
-        margin-top: 10px;
-    }
+        margin: auto;    
+        background-color: rgb(237,237,238); 
+        padding-top: 20px;
+        padding-bottom: 20px;    
+        margin-bottom: 20px;   
+}
     
 
         
