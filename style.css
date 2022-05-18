@@ -345,11 +345,22 @@ h2:hover{
 .mainfooter img{
     padding-right: 10px;
     padding-left: 10px;
+    
 }
 
+.mainfooter img:hover{
+   
+    -webkit-filter: drop-shadow(1px 2px 1px rgb(0, 187, 1710));
+    filter: drop-shadow(1px 2px 1px rgb(0, 187, 171)); 
+    
+}
 
-
-
+.mainfooter img:active{
+   
+    -webkit-filter: drop-shadow(2px 2px 1px rgb(1, 117, 108));
+    filter: drop-shadow(2px 2px 1px rgb(1, 117, 108)); 
+    
+}
 
 /*****************************************/
 /****************FORMS*****************/
@@ -725,6 +736,21 @@ a.underlinewooshNaslovi:before{
 .scroll-up-button-container img{
     max-width: 70px;
 
+}
+
+
+.scroll-up-button img:hover{
+   
+    -webkit-filter: drop-shadow(1px 2px 1px rgb(0, 187, 1710));
+    filter: drop-shadow(1px 2px 1px rgb(0, 187, 171)); 
+    
+}
+
+.scroll-up-button img:active{
+   
+    -webkit-filter: drop-shadow(2px 2px 1px rgb(1, 117, 108));
+    filter: drop-shadow(2px 2px 1px rgb(1, 117, 108)); 
+    
 }
 /************ANIMATION****************/
 
