@@ -903,8 +903,13 @@ a.underlinewooshNaslovi:before{
         flex-direction: column;
         text-align: left;
         padding-bottom: 80px;
-        padding-left: 20px;
   
+    }
+
+    .kontenijer p{
+     
+        margin-right: 20px;
+        margin-left: 20px;
     }
     .pasus{
         display: flex;
@@ -1068,13 +1073,12 @@ a.underlinewooshNaslovi:before{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        text-align: center;
         border: 48px solid rgb(237,237,238);
         background-color: #adc0b8;
         margin: auto;
         margin-top: 0px;
         max-width: 228px;
-        max-height: auto;
+        height: auto;
         margin-bottom: 30px;
 
         }
@@ -1085,10 +1089,14 @@ a.underlinewooshNaslovi:before{
         background-color: rgb(237,237,238); 
         padding: 5px;  
         margin-top: 7px; 
-        text-align: center;
+        text-align: left;
         display: block;
         justify-content: center;
     }
+
+.textInProjects p{
+    text-align: left;
+}
 
     .idkVise{
         display: flex;
