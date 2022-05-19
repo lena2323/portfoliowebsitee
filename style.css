@@ -145,8 +145,9 @@ padding: 1em;
     max-width: 700px;
     display: flex;
     align-items:center;
-    margin-left: 10px;
-    
+    margin-left: 20px;
+    margin-right: 40px;
+
 
 }
 
@@ -162,11 +163,13 @@ padding: 1em;
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 80px;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-left: 20px;
     background-color: #adc0b8;
     padding-right: 20px;
+    margin: auto;
+    
 }
+
 
 
 .pasus2{
@@ -174,7 +177,7 @@ padding: 1em;
     font-family: 'Times New Roman', Times, serif;
     font-size: 23px;
     padding-top: 10px;
-    text-align: center;
+    text-align: justify;
     padding-right: 20px;
 
 
@@ -187,14 +190,28 @@ padding: 1em;
     font-size: 23px;
     padding-top: 10px;
     text-align: center;
+    margin: auto;
+    padding-left: 20px;
     padding-right: 20px;
-
 }
 
 .h2pasus{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+
 }
+
+.h2pasus a{
+    
+    font-size: 30px;
+
+}
+
+h2{
+    font-size: larger;
+}
+
 
 h2:hover{
     text-shadow: 5px 2px 3px rgba(0, 187, 171, 1);  
@@ -202,11 +219,6 @@ h2:hover{
 }
 
 
-.about{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 23px;
-    padding-top: 200px;
-}
 
 
 
@@ -216,11 +228,14 @@ h2:hover{
     align-items:center;
     padding-top: 0px;
     padding-bottom: 80px;
-    padding-right: 20px;
-    padding-left: 70px;
+    margin: auto;
     background-color: rgb(237,237,238);
-    text-align: center;
+}
 
+.kontenijer p{
+    text-align: justify;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 .kontenijer img{
@@ -503,38 +518,9 @@ textarea:focus{
 
   
 /*****************************************/
+/*****************UNDERLINE***************/
 /*****************************************/
-/*****************************************/
 
-
-  a.underlinewooshNav{
-    position: relative;
-    text-decoration: none;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-
-}
-
-a.underlinewooshNav:before{
-    display: block;
-    content: "";
-    position:inherit;
-    width: 0;
-    height: 2px;
-    bottom: -104px;
-    left: 0;
-    background-color: rgb(0, 187, 171);
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-}
-
-a.underlinewooshNav:hover:before {
-    visibility: visible;
-    width: 100%;
-  }
-
-  /***********************************/
 
 
   p.underlinewoosh{
@@ -597,9 +583,8 @@ a.underlinewooshNaslovi{
     position: relative;
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-
+    font-family:'Times New Roman', Times, serif;
+    font-size: larger;
 }
 
 a.underlinewooshNaslovi:before{
@@ -615,11 +600,15 @@ a.underlinewooshNaslovi:before{
     transition: all 0.3s ease-in-out;
 }
 
+/*****************************************/
+/*****************************************/
+/*****************************************/
+
   .mainfooter p:hover{
     text-shadow: 5px 2px 3px rgba(0, 187, 171, 1);  
   }
 
-
+/****************DIVIDERS*********************/
 
 .testest180{
     background-image: url(images/testnavbar.png);
@@ -647,6 +636,7 @@ a.underlinewooshNaslovi:before{
     
 
 }
+/***********************************************/
 
 
 /************ANIMATION on the banner****************/
