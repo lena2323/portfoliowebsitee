@@ -218,7 +218,18 @@ h2:hover{
 
 }
 
+.footerText{
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:large;
 
+}
+
+.footerText:hover{
+    text-shadow: 5px 2px 3px rgba(0, 187, 171, 1);  
+
+}
 
 
 
@@ -298,7 +309,7 @@ h2:hover{
 
 .projektiIslova{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     text-align: center;
     justify-self: center;
@@ -308,7 +319,6 @@ h2:hover{
     margin-right: 20px;
     margin-top: 0px;
     width: 500px;
-    height: 487px;
     margin-bottom: 20px;
 }
 
