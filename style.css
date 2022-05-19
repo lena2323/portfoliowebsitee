@@ -907,7 +907,7 @@ a.underlinewooshNaslovi:before{
     }
 
     .kontenijer p{
-     
+        text-align: left;
         margin-right: 20px;
         margin-left: 20px;
     }
@@ -1092,10 +1092,14 @@ a.underlinewooshNaslovi:before{
         text-align: left;
         display: block;
         justify-content: center;
+        height: auto;
+
     }
 
 .textInProjects p{
     text-align: left;
+    height: auto;
+
 }
 
     .idkVise{
@@ -1108,6 +1112,8 @@ a.underlinewooshNaslovi:before{
         
     .idkVise p{
     background-color: #adc0b8;
+    text-align: center;
+
     }
 
 
@@ -1119,7 +1125,6 @@ a.underlinewooshNaslovi:before{
         padding-left: 0px;
         padding-top: 20px;
         padding-bottom: 40px;
-
         } 
     
     .projects img{
@@ -1135,6 +1140,8 @@ a.underlinewooshNaslovi:before{
         padding-top: 20px;
         padding-bottom: 20px;    
         margin-bottom: 20px;   
+        height: auto;
+
 }
     
 
