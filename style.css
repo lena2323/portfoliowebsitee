@@ -1134,14 +1134,13 @@ a.underlinewooshNaslovi:before{
 
     .textInProjects h3{
         padding: 0%;
-        width: 100%;
         margin: auto;    
         background-color: rgb(237,237,238); 
         padding-top: 20px;
         padding-bottom: 20px;    
         margin-bottom: 20px;   
         height: auto;
-
+        position: relative;
 }
     
 
