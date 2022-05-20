@@ -1,13 +1,40 @@
+// Hamburger menu
+
 const hamburger = document.getElementById('hamburger');
 const navUL = document.getElementById('nav-ul');
+const navLink1 = document.getElementById('nav-link1');
+const navLink2 = document.getElementById('nav-link2');
+const navLink3 = document.getElementById('nav-link3');
+
 
 hamburger.addEventListener('click',() =>{
     navUL.classList.toggle('show');
 });
 
 
+// Hamburger to open and close on link click
 
-/********* Testing animations oon scroll!**/
+
+navLink1.addEventListener('click',() =>{
+    navUL.classList.remove("show");
+
+});
+
+navLink2.addEventListener('click',() =>{
+  navUL.classList.remove("show");
+
+});
+
+navLink3.addEventListener('click',() =>{
+  navUL.classList.remove("show");
+
+});
+
+
+/*******************************************/
+
+
+/*********Animations oon scroll!**/
 
 const scrollElements = document.querySelectorAll(".js-scroll");
 
@@ -51,4 +78,4 @@ window.addEventListener("scroll", () => {
 });
 
 
-  /********* Testing animations oon scroll!**/
+  /********* Animations oon scroll! *******/
