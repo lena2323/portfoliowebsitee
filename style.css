@@ -850,6 +850,15 @@ a.underlinewooshNaslovi:before{
 }
 
 
+.hamburgerContainer:focus{
+    background-color: none;
+}
+
+.hamburger:focus{
+    background-color: none;
+
+}
+
 .hamburgerContainer {
     margin: auto;
     width: 60px;
@@ -879,12 +888,7 @@ a.underlinewooshNaslovi:before{
     background: rgb(237,237,238);
     transition: all .3s;
     position: relative;
-    user-drag: none;  
-   user-select: none;
-   -moz-user-select: none;
-   -webkit-user-drag: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
+    
   }
   
   span + span {
