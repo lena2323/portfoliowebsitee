@@ -314,7 +314,7 @@ h2:hover{
     text-align: center;
     justify-self: center;
     border: 20px solid rgb(237,237,238);
-    background-color: #203a2b59;
+    background-color: #adc0b8;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 0px;
@@ -340,7 +340,6 @@ h2:hover{
 }
 
 .projektiIslova:hover{
-    background-color: #203a2b59;
     transition: ease-in-out 0.5s all;
     transform: scale(1.03);
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.4);
@@ -1203,23 +1202,13 @@ a.underlinewooshNaslovi:before{
     .projektiIslova{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        border: 40px solid rgb(237,237,238);
         background-color: #adc0b8;
-        margin: auto;
-        margin-top: 0px;
-        max-width: 228px;
-        height: auto;
         margin-bottom: 30px;
-
-        }
-    
-    .textInProjects {
-       
-        background-color: rgb(237,237,238); 
-        margin-top: 7px; 
-
+        width: 260px;
+        height: auto;
     }
+    
+    
 
 
     .idkVise{
@@ -1233,8 +1222,8 @@ a.underlinewooshNaslovi:before{
     .idkVise p{
     background-color: #adc0b8;
     text-align: center;
-
     }
+
 
 
     .projects{
@@ -1245,6 +1234,7 @@ a.underlinewooshNaslovi:before{
         padding-left: 0px;
         padding-top: 20px;
         padding-bottom: 40px;
+        
         } 
     
     .projects img{
@@ -1252,15 +1242,6 @@ a.underlinewooshNaslovi:before{
         
     }
 
-    .textInProjects h3{
-        padding: 0%;
-        margin: auto;    
-        background-color: rgb(237,237,238); 
-        padding-top: 20px;
-        height: auto;
-        position: relative;
-}
-    
 
         
 .projektiIslova:hover{
