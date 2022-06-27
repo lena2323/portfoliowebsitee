@@ -10,12 +10,13 @@ const hamburger = document.getElementById("hamburger");
 const hamburgerContainer = document.getElementById("hamburgerContainer");
 
 
-const navBar = document.getElementById("nav-bar");
+const navBar = document.getElementById("navbar");
 
 
 hamburger.addEventListener('click',() =>{
   hamburger.classList.toggle('notActive');
   navUL.classList.toggle('show');
+  navBar.classList.toggle('show');
 });
 
 // Hamburger to open and close on link click
@@ -24,18 +25,21 @@ hamburger.addEventListener('click',() =>{
 navLink1.addEventListener('click',() =>{
     navUL.classList.remove("show");
     hamburger.classList.add('notActive');
+    navBar.classList.remove('show');
 
 });
 
 navLink2.addEventListener('click',() =>{
   navUL.classList.remove("show");
   hamburger.classList.add('notActive');
+  navBar.classList.remove('show');
 
 });
 
 navLink3.addEventListener('click',() =>{
   navUL.classList.remove("show");
   hamburger.classList.add('notActive');
+  navBar.classList.remove('show');
 
 });
 
