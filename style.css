@@ -1204,7 +1204,7 @@ a.underlinewooshNaslovi:before{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        border: 48px solid rgb(237,237,238);
+        border: 40px solid rgb(237,237,238);
         background-color: #adc0b8;
         margin: auto;
         margin-top: 0px;
@@ -1215,23 +1215,12 @@ a.underlinewooshNaslovi:before{
         }
     
     .textInProjects {
-        max-width: 228px;
-        max-height: 28px;
+       
         background-color: rgb(237,237,238); 
-        padding: 5px;  
         margin-top: 7px; 
-        text-align: left;
-        display: block;
-        justify-content: center;
-        height: auto;
 
     }
 
-.textInProjects p{
-    text-align: left;
-    height: auto;
-
-}
 
     .idkVise{
         display: flex;
