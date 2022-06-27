@@ -701,20 +701,7 @@ a.underlinewooshNaslovi:before{
     display: none ;
 }
 
-.hamburger{
-    background-color: transparent;
-    border: 0;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    cursor: pointer;
-    display: none;
-}
 
-.hamburger:focus{
-    outline: none;
-}
-
-/****************HAMBURGER****************/
 
 
 /************ANIMATION****************/
@@ -770,19 +757,17 @@ a.underlinewooshNaslovi:before{
         text-align: right;
         background-image: url(images/Picture33.png);
         background-color: transparent;
+        background-size:cover;
         background-position: bottom;
         margin-top: 0px;
         padding-top: 0px;
-        margin-top: -200px;
+        margin-top: 0px;
     }
 
-
+.logo{
+    display: none;
+}
         
-    .navbar img{
-            min-width: 20px;
-            display: none;
-
-        }
 
 /****************HAMBURGER****************/
 .nav-ul{
@@ -797,6 +782,9 @@ a.underlinewooshNaslovi:before{
     width: auto;
     padding: 0%;
     margin: 0%;
+    padding-right: 10px;
+    padding-top: 40px;
+
 
 }
 /*********TocloseOpenHamburgerOnclick*********/
@@ -804,16 +792,6 @@ a.underlinewooshNaslovi:before{
 /******************/
 
 
-.hamburger{
-    display: block;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    position: sticky;
-}
-
-.navbar button{
-    padding-top: 220px;
-}
 
 
 
@@ -838,7 +816,7 @@ a.underlinewooshNaslovi:before{
     filter: drop-shadow(1px 2px 1px rgb(0, 187, 171)); 
 }
 
-/*
+
 .hamburgerContainer {
     margin: auto;
     width: 60px;
@@ -985,7 +963,7 @@ a.underlinewooshNaslovi:before{
     flex-direction: column;
     padding: 20px;
 }
-*/
+
 /****************HAMBURGER****************/
 
 

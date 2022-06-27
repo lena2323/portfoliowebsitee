@@ -1,18 +1,12 @@
 // Hamburger menu
 
-const hamburger = document.getElementById('hamburger');
 const navUL = document.getElementById('nav-ul');
 const navLink1 = document.getElementById('nav-link1');
 const navLink2 = document.getElementById('nav-link2');
 const navLink3 = document.getElementById('nav-link3');
 
 
-hamburger.addEventListener('click',() =>{
-    navUL.classList.toggle('show');
-});
-
-
-/*const hamburger = document.getElementById("hamburger");
+const hamburger = document.getElementById("hamburger");
 const hamburgerContainer = document.getElementById("hamburgerContainer");
 
 
@@ -21,24 +15,27 @@ const navBar = document.getElementById("nav-bar");
 
 hamburger.addEventListener('click',() =>{
   hamburger.classList.toggle('notActive');
-  navBar.classList.toggle('show');
-});*/
+  navUL.classList.toggle('show');
+});
 
 // Hamburger to open and close on link click
 
 
 navLink1.addEventListener('click',() =>{
     navUL.classList.remove("show");
+    hamburger.classList.add('notActive');
 
 });
 
 navLink2.addEventListener('click',() =>{
   navUL.classList.remove("show");
+  hamburger.classList.add('notActive');
 
 });
 
 navLink3.addEventListener('click',() =>{
   navUL.classList.remove("show");
+  hamburger.classList.add('notActive');
 
 });
 
