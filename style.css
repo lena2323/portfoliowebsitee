@@ -10,8 +10,7 @@ input,
 textarea,
 button,
 select,
-a,
-span {
+a{
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -869,6 +868,8 @@ a.underlinewooshNaslovi:before{
     position: fixed;
     top: 15px;
     right: 15px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
   }
   
   .hamburger {
@@ -877,6 +878,7 @@ a.underlinewooshNaslovi:before{
     justify-content: center;
     width: 80px;
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 
   }
   
@@ -889,7 +891,8 @@ a.underlinewooshNaslovi:before{
     background: rgb(237,237,238);
     transition: all .3s;
     position: relative;
-    
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
   }
   
   span + span {
