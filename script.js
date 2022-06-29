@@ -4,6 +4,7 @@ const navUL = document.getElementById('nav-ul');
 const navLink1 = document.getElementById('nav-link1');
 const navLink2 = document.getElementById('nav-link2');
 const navLink3 = document.getElementById('nav-link3');
+const navLink4 = document.getElementById('nav-link4');
 
 
 const hamburger = document.getElementById("hamburger");
@@ -20,6 +21,7 @@ hamburger.addEventListener('click',() =>{
   navLink1.classList.add('animationForNavInHamburgerMenu');
   navLink2.classList.add('animationForNavInHamburgerMenu');
   navLink3.classList.add('animationForNavInHamburgerMenu');
+  navLink4.classList.add('animationForNavInHamburgerMenu');
 
 });
 
@@ -41,6 +43,13 @@ navLink2.addEventListener('click',() =>{
 });
 
 navLink3.addEventListener('click',() =>{
+  navUL.classList.remove("show");
+  hamburger.classList.add('notActive');
+  navBar.classList.remove('show');
+
+});
+
+navLink4.addEventListener('click',() =>{
   navUL.classList.remove("show");
   hamburger.classList.add('notActive');
   navBar.classList.remove('show');
