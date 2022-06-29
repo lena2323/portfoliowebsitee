@@ -275,6 +275,7 @@ h2:hover{
   justify-content: center;
   background-color: rgb(237,237,238);
   padding-top: 50px;
+  padding-bottom: 150px;
 }
 
 .containerImagesForTools img{
@@ -289,7 +290,16 @@ h2:hover{
     background-color: rgb(237,237,238);
   padding: 0%;
   margin: 0%;
+  padding-top: 100px;
+
 }
+
+#stack-for-nav-link{
+  margin-top: -100px;
+  
+  position: absolute;
+}
+
 
 /*****************************************/
 /****************PROJECTS*****************/
