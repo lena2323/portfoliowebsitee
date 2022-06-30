@@ -147,7 +147,7 @@ padding: 1em;
     filter: drop-shadow(1px 2px 1px rgb(0, 187, 171)); 
 }
 
-
+/**************Art of web development*****************/
 
 .fora{
     max-width: 700px;
@@ -224,6 +224,9 @@ h2:hover{
 
 }
 
+
+
+/*********Footer*************/
 .footerText{
     
     text-align: center;
@@ -268,16 +271,6 @@ h2:hover{
     
 }
 
-.containerImagesForTools{
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  justify-content: center;
-  background-color: rgb(237,237,238);
-  padding-top: 50px;
-  padding-bottom: 150px;
-}
-
 .containerImagesForTools img{
   max-width: 200px;
 }
@@ -287,10 +280,10 @@ h2:hover{
   text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
-    background-color: rgb(237,237,238);
-  padding: 0%;
+    background-color: #adc0b8;
+    padding: 0%;
   margin: 0%;
-  padding-top: 100px;
+  padding-bottom: 50px;
 
 }
 
@@ -685,6 +678,17 @@ a.underlinewooshNaslovi:before{
     
 
 }
+
+.testestdivider{
+  background-image: url(images/divider.png);
+  width: 100%;
+  height: 180px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  background-color: transparent;
+}
 /***********************************************/
 
 
@@ -785,6 +789,52 @@ a.underlinewooshNaslovi:before{
     
 }
 /************ANIMATION****************/
+
+
+
+/************SWIPER*********************/
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: #adc0b8;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+}
+
+
+.swiper-wrapper{
+  margin-bottom: 50px;
+}
+
+
+
+
+
 
 
 
@@ -1051,13 +1101,6 @@ a.underlinewooshNaslovi:before{
 /****************HAMBURGER****************/
 
 
-body{
-  padding: 0%;
-  margin: 0%;
-}
-body img {
-  max-width: 25px;
-}
 
 .banner{
   padding-top: 0px;
@@ -1365,5 +1408,20 @@ padding-top: 40px;}
 }
 
 
+
+
+
+/**************Swiper****************/
+
+.swiper-wrapper{
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: 30px;
+}
+
+.swiper-wrapper img {
+  height: 300px;
+  width: auto;
+}
 }
 

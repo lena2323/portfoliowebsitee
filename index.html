@@ -7,7 +7,10 @@
     <title>Milenija</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/cd16fb53d7.js" crossorigin="anonymous"></script>
-
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
 
 </head>
 <body>
@@ -64,19 +67,66 @@
         <img src="images/aboutme.svg" class="scroll-element js-scroll fade-in-bottom">
     </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="testest" id="projects-for-nav-link"></div>
+
+
+
     <div id="stack-for-nav-link"></div>
 
-    <h2 class="toolsH2" ><a class="underlinewooshNaslovi" href="">Tools I have used</a></h2> 
+    <h2 class="toolsH2 scroll-element js-scroll fade-in-bottom" ><a class="underlinewooshNaslovi" href="">Tools I have used</a></h2> 
+    <!-- Slider main container -->
+    <div class="swiper mySwiper scroll-element js-scroll fade-in-bottom">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/icons8-html-5-480.png" >
+            </div>
+            <div class="swiper-slide">
+                <img src="images/icons8-css3-480.png" >
+            </div>
+            <div class="swiper-slide">
+                <img src="images/logo-javascript-png-transparent-logo-javascript-images-892775.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/icons8-git-480.png">
+            </div>
+            <div class="swiper-slide"> 
+                <img src="images/icons8-github-480.png">
+            </div>
+        </div>
 
-    <div class="containerImagesForTools">      
-        
-        <img src="images/icons8-html-5-480.png" class="scroll-element js-scroll fade-in-bottom">
-        <img src="images/icons8-css3-480.png" class="scroll-element js-scroll fade-in-bottom">
-        <img src="images/logo-javascript-png-transparent-logo-javascript-images-892775.png" class="scroll-element js-scroll fade-in-bottom">
-        <img src="images/icons8-git-480.png" class="scroll-element js-scroll fade-in-bottom">
-        <img src="images/icons8-github-480.png" class="scroll-element js-scroll fade-in-bottom">
-    </div>
-    <div class="testest" id="projects-for-nav-link"></div>
+        <div class="swiper-pagination"></div>
+
+
+</div>
+
+
+
+
+<div class="testestdivider"></div>
+
+
+
+
+
+
+
+
+
+
+
 
        
     <h2 class="h2pasus"><a>Projects</a></h2>
@@ -170,7 +220,33 @@
     </footer>
 
 
-    <script src="script.js"></script>
 
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    }}
+      });
+    </script>
 </body>
 </html>
