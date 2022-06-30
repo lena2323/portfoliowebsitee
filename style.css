@@ -835,11 +835,14 @@ a.underlinewooshNaslovi:before{
   margin-bottom: 50px;
 }
 
+.swiper-button-prev {
+  color: rgb(239,237,238) !important;
+}
 
+.swiper-button-next {
+  color: rgb(239,237,238) !important; 
 
-
-
-
+}
 
 
 /***************************************************************
