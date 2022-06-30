@@ -824,6 +824,10 @@ a.underlinewooshNaslovi:before{
   height: 300px;
   width: auto;
   object-fit: cover;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 

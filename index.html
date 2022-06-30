@@ -67,24 +67,11 @@
         <img src="images/aboutme.svg" class="scroll-element js-scroll fade-in-bottom">
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="testest" id="projects-for-nav-link"></div>
-
-
-
     <div id="stack-for-nav-link"></div>
+
+<div class="testest"></div>
+
+
 
     <h2 class="toolsH2 scroll-element js-scroll fade-in-bottom" ><a class="underlinewooshNaslovi" href="">Tools I have used</a></h2> 
     <!-- Slider main container -->
@@ -107,6 +94,9 @@
             </div>
         </div>
 
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
         <div class="swiper-pagination"></div>
 
 
@@ -114,10 +104,8 @@
 
 
 
-
-<div class="testestdivider"></div>
-
-
+<div id=""></div>
+<div class="testest180"></div>
 
 
 
@@ -126,10 +114,10 @@
 
 
 
+<div id="projects-for-nav-link"></div>
+<div class="testest"></div>
 
-
-       
-    <h2 class="h2pasus"><a>Projects</a></h2>
+ <h2 class="h2pasus"><a>Projects</a></h2>
         <section class="idkVise scroll-container">
             <div class="projects " >
                 <div class="projektiIslova scroll-element js-scroll fade-in-bottom">
@@ -161,10 +149,13 @@
                
             </div>
         </section>
-        <div class="testest180" ></div>
+    
+        <div id="contact-for-nav-link" ></div>
 
-   
-    <form class="contact" id="contact-for-nav-link"          name="contact" method="POST" data-netlify="true" action="/pages/success"
+    <div class="testest180" ></div>
+
+
+    <form class="contact" name="contact" method="POST" data-netlify="true" action="/pages/success"
     >
         <h2 class="h2pasus"> Contact me</h2>
 
@@ -245,7 +236,13 @@
     1024: {
       slidesPerView: 3,
       spaceBetween: 50,
-    }}
+    }},
+    navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        rewind: true,
+
       });
     </script>
 </body>
