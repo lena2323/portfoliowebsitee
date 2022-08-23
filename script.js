@@ -45,6 +45,12 @@ navLink4.addEventListener('click',() =>{
   navBar.classList.remove('show');
 });
 
+navlinkExp.addEventListener('click',() =>{
+  navUL.classList.remove("show");
+  hamburger.classList.add('notActive');
+  navBar.classList.remove('show');
+});
+
 /*********Animations oon scroll!**/
 
 const scrollElements = document.querySelectorAll(".js-scroll");

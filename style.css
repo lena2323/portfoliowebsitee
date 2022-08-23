@@ -803,6 +803,7 @@ a.underlinewooshNaslovi:before{
 
 .navbar.show{
   background-image: url(images/Picture33.png);
+  background-position: center;
 }
 
 .logo{
@@ -822,7 +823,12 @@ a.underlinewooshNaslovi:before{
   padding: 0%;
   margin: 0%;
   padding-right: 10px;
-  padding-top: 40px;
+  padding-top: 70px;
+}
+
+.navItems{
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 /*********HamburgerAnimation*********/
 
