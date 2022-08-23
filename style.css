@@ -131,6 +131,17 @@ li{
   }
 }
 
+.links{
+  color: #20b11b;
+
+  text-decoration: none;
+}
+
+.links:hover{
+  color: #1ddd16;
+
+}
+
 /*****Testing scrolling animation*******/
 .scrolled.fade-in-bottom {
     animation: fade-in-bottom 1s ease-in-out both;
@@ -425,7 +436,9 @@ cursor:default;
   letter-spacing: 0.1em;
 }
 
-
+code{
+  background-color: #b9c9c2;
+}
 /*****************************************/
 /****************FOOTER*******************/
 /*****************************************/
