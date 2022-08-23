@@ -75,15 +75,53 @@ li{
   margin: auto;
   padding: 0px 300px 0px 300px;
   max-width: 100%;
-  padding-top: 400px;
+  padding-top: 300px;
   padding-bottom: 200px;    
   overflow: hidden;
   background-image: url(images/bannernovi.png);
   background-repeat:repeat;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.bannerH1Container{
+  text-align: center;
+}
+
+.arrow{
+  margin-top: 150px;
+  position: relative;
+  transform: translate(-50%,-50%);
+}
+.arrow span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #adc0b8;
+  border-right: 5px solid #adc0b8;
+  transform: rotate(45deg);
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
 }
 
 /*****Testing scrolling animation*******/
@@ -386,13 +424,6 @@ cursor:default;
   letter-spacing: 0.1em;
 }
 
-.sectionInExperience:hover{
-  transition: ease-in-out 0.3s all;
-  transform: scale(1.02);
-  box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.4);
-  z-index: 1;
-  background-color: #adc0b8;
-}
 
 /*****************************************/
 /****************FOOTER*******************/
@@ -903,7 +934,7 @@ a.underlinewooshNaslovi:before{
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
   
-span {
+#hamburger span {
   display: block;
   width: 100%;
   box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
@@ -1038,22 +1069,20 @@ span + span {
   background-image: url(images/bannernovi.png);
   background-repeat:repeat;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items:center;
   justify-content: center;
-  padding-bottom: 130px; 
-  padding-top: 150px;
+  height: 100vh;
+  text-align: center;
+  
 }
 
 .banner h1{
-  font-size: 7vh;
-  padding: 0px 0px 0px 0px;
-  padding-right: 0px;
-  margin-left: 1em;
-}
 
-.bRonlyATmedia {
-  display: block;
+  font-size: 4vh;
+  padding-right: 0px;
+  width: 400px;
+  margin: 0;
 }
 
 .aboutMeAllTextContainer{
@@ -1317,4 +1346,35 @@ padding-top: 40px;
   height: 300px;
   width: auto;
 }
+
+
+.arrow span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #adc0b8;
+  border-right: 5px solid #adc0b8;
+  transform: rotate(45deg);
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
 }
