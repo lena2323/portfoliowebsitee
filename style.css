@@ -39,7 +39,7 @@ html {
 
 .navbar img{
   max-width: 100px;
-  padding-left: 20px;
+  padding-left: 40px;
   padding-top: 10px;
   margin-top: -30px;
   margin-bottom: 0px;
@@ -48,6 +48,7 @@ html {
 h3{
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
+  letter-spacing: 0.1em;
 }
 
 ul{
@@ -117,6 +118,7 @@ li{
   font-size: 70px;
   margin: auto;    
   padding-right: 0px;
+  letter-spacing: 0.1em;
 }
 
 .banner h1:hover{
@@ -127,6 +129,7 @@ li{
   text-decoration: none;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1em;
 }
 
 .navItems:hover{
@@ -185,6 +188,9 @@ li{
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
+  letter-spacing: 0.2em;
+  padding-bottom: 70px;
+
 }
 
 .textInH2 a{ 
@@ -192,7 +198,7 @@ li{
 }
 
 h2{
- font-size: larger;
+  font-size: larger;
 }
 
 h2:hover{
@@ -250,6 +256,7 @@ h2:hover{
   padding: 0%;
   margin: 0%;
   padding-bottom: 50px;
+  letter-spacing: 0.2em;
 }
 
 #stack-for-nav-link{
@@ -316,8 +323,7 @@ h2:hover{
 .singleProjectContainer p{
   padding-left: 20px;
   padding-right: 20px;
-  text-align: justify;        
-
+  text-align: center;        
 }
 
 .singleProjectContainer h3{
@@ -336,8 +342,43 @@ h2:hover{
   z-index: 1;
 }
 
+
 /*****************************************/
-/****************FOOTER*****************/
+/****************EXPERIENCE***************/
+/*****************************************/
+
+.experienceContainer{
+  background-color: rgb(237,237,238);
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-flow: row wrap;}
+
+.experienceH2{
+  background-color: rgb(237,237,238);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+  margin: 0%;
+  padding-bottom: 70px;
+}
+
+.sectionInExperience{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: #adc0b8;
+  width: 500px;
+}
+
+
+/*****************************************/
+/****************FOOTER*******************/
 /*****************************************/
 .mainfooter{
   background-color: #adc0b8;
