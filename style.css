@@ -181,35 +181,10 @@ li{
 
 /**************Art of web development*****************/
 
-.ImageInIntroductionContainer{
-  max-width: 700px;
-  display: flex;
-  align-items:center;
-  margin-left: 20px;
-  margin-right: 40px;
-}
 
-.introductionContainer img:hover{
-  -webkit-filter: drop-shadow(1px 2px 1px rgb(0, 187, 1710));
-  filter: drop-shadow(1px 2px 1px rgb(0, 187, 171)); 
-}
-
-.introductionContainer{
-  display: flex;
-  flex-direction: row;
-  align-items:center;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 80px;
-  background-color: #adc0b8;
-}
-
-.textInintroductionContainer{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 23px;
-  padding-top: 10px;
-  text-align: justify;
-  padding-right: 20px;
+#about-me-for-nav-link{
+  position: absolute;
+  margin-top: -200px;
 }
 
 .aboutMeAllTextContainer{
@@ -1089,26 +1064,6 @@ span + span {
   text-align: left;
 }
 
-.ImageInIntroductionContainer{
-  max-width: 300px;
-  display: flex;
-  align-items:center;
-  margin: auto;
-}
-
-.introductionContainer{
-  display: flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content: center;
-  padding-top: 0px;
-  padding-bottom: 80px;
-  background-color: #adc0b8;
-  max-width: 400px;   
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: auto;
-}
 
 .aboutMeContainer{
   flex-direction: column;
@@ -1135,20 +1090,6 @@ span + span {
   max-width: 400px; 
 }
 
-.textInintroductionContainer{
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  padding-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding-right: 20px;
-  padding-left: 20px;
-  background-color: #adc0b8;
-  max-width: 400px;
-  text-align: left;
-  font-family: 'Times New Roman', Times, serif;
-}
 
 .aboutMeContainer img{
   margin-top:80px;
@@ -1347,6 +1288,15 @@ padding-top: 40px;
   width: auto;
 }
 
+/************Arrows in the Banner section***********/
+
+#about-me-for-nav-link{
+margin-top: -30px;
+}
+
+.arrow{
+  transform: none;
+}
 
 .arrow span{
   display: block;
