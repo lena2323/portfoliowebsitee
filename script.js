@@ -4,6 +4,7 @@ const navLink1 = document.getElementById('nav-link1');
 const navLink2 = document.getElementById('nav-link2');
 const navLink3 = document.getElementById('nav-link3');
 const navLink4 = document.getElementById('nav-link4');
+const navlinkExp = document.getElementById('nav-link-Exp');
 const hamburger = document.getElementById("hamburger");
 const navBar = document.getElementById("navbar");
 
@@ -15,7 +16,7 @@ hamburger.addEventListener('click',() =>{
   navLink2.classList.add('animationForNavInHamburgerMenu');
   navLink3.classList.add('animationForNavInHamburgerMenu');
   navLink4.classList.add('animationForNavInHamburgerMenu');
-
+  navlinkExp.classList.add('animationForNavInHamburgerMenu');
 });
 
 // Hamburger to open and close on link click

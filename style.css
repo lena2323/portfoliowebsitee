@@ -24,7 +24,7 @@ html {
   justify-content: center;
   align-items:center;
   background-image: url(images/Picture1.png);
-  background-position: center;
+  background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 100px;
@@ -39,10 +39,10 @@ html {
 
 .navbar img{
   max-width: 100px;
-  padding-left: 40px;
   padding-top: 10px;
-  margin-top: -30px;
   margin-bottom: 0px;
+  margin-top: -30px;
+
 }
 
 h3{
@@ -352,7 +352,8 @@ h2:hover{
   margin: 0%;
   padding: 0%;
   display: flex;
-  flex-flow: row wrap;}
+  flex-flow: row wrap;
+}
 
 .experienceH2{
   background-color: rgb(237,237,238);
@@ -364,6 +365,13 @@ h2:hover{
   padding-bottom: 70px;
 }
 
+.sectionInExperience h3:hover{
+text-shadow: 5px 2px 3px rgba(0, 187, 171, 1);  
+cursor:default;
+
+}
+
+
 .sectionInExperience{
   display: flex;
   flex-direction: column;
@@ -373,9 +381,18 @@ h2:hover{
   margin-bottom: 50px;
   padding: 20px;
   background-color: #adc0b8;
-  width: 500px;
+  width: 400px;
+  border-radius: 5px;
+  border: 20px solid rgb(252, 252, 252);
 }
 
+.sectionInExperience:hover{
+  transition: ease-in-out 0.3s all;
+  transform: scale(1.02);
+  box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  background-color: #adc0b8;
+}
 
 /*****************************************/
 /****************FOOTER*******************/
