@@ -1,18 +1,11 @@
 // Hamburger menu
-
 const navUL = document.getElementById('nav-ul');
 const navLink1 = document.getElementById('nav-link1');
 const navLink2 = document.getElementById('nav-link2');
 const navLink3 = document.getElementById('nav-link3');
 const navLink4 = document.getElementById('nav-link4');
-
-
 const hamburger = document.getElementById("hamburger");
-
-
-
 const navBar = document.getElementById("navbar");
-
 
 hamburger.addEventListener('click',() =>{
   hamburger.classList.toggle('notActive');
@@ -27,38 +20,29 @@ hamburger.addEventListener('click',() =>{
 
 // Hamburger to open and close on link click
 
-
 navLink1.addEventListener('click',() =>{
-    navUL.classList.remove("show");
-    hamburger.classList.add('notActive');
-    navBar.classList.remove('show');
-
+  navUL.classList.remove("show");
+  hamburger.classList.add('notActive');
+  navBar.classList.remove('show');
 });
 
 navLink2.addEventListener('click',() =>{
   navUL.classList.remove("show");
   hamburger.classList.add('notActive');
   navBar.classList.remove('show');
-
 });
 
 navLink3.addEventListener('click',() =>{
   navUL.classList.remove("show");
   hamburger.classList.add('notActive');
   navBar.classList.remove('show');
-
 });
 
 navLink4.addEventListener('click',() =>{
   navUL.classList.remove("show");
   hamburger.classList.add('notActive');
   navBar.classList.remove('show');
-
 });
-
-
-/*******************************************/
-
 
 /*********Animations oon scroll!**/
 
@@ -102,5 +86,3 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", () => { 
   handleScrollAnimation();
 });
-
-
