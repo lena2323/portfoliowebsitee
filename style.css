@@ -384,6 +384,7 @@ cursor:default;
   width: 400px;
   border-radius: 5px;
   border: 20px solid rgb(252, 252, 252);
+  letter-spacing: 0.1em;
 }
 
 .sectionInExperience:hover{
