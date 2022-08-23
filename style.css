@@ -368,7 +368,6 @@ h2:hover{
 .sectionInExperience h3:hover{
 text-shadow: 5px 2px 3px rgba(0, 187, 171, 1);  
 cursor:default;
-
 }
 
 
@@ -380,10 +379,10 @@ cursor:default;
   margin-top: 20px;
   margin-bottom: 50px;
   padding: 20px;
-  background-color: #adc0b8;
+  background-color: rgb(237,237,238);
+  border: 2px solid #adc0b8;
   width: 400px;
   border-radius: 5px;
-  border: 20px solid rgb(252, 252, 252);
   letter-spacing: 0.1em;
 }
 
@@ -1107,9 +1106,9 @@ span + span {
   align-items:center;
   padding-top: 0px;
   margin-right: 0px;
-  padding-right: 0px;
   margin-left: 0px;
-  padding-left: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
   background-color: #adc0b8;
   max-width: 400px;
   text-align: left;
