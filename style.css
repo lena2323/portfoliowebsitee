@@ -1256,7 +1256,6 @@ textarea{
 .singleProjectContainer{
   display: flex;
   flex-direction: column;
-  background-color: #adc0b8;
   margin-bottom: 30px;
   width: 260px;
   height: auto;
@@ -1269,10 +1268,6 @@ textarea{
   margin: auto;
 }
 
-.allProjectsContainer p{
-  background-color: #adc0b8;
-  text-align: center;
-}
 .projects{
   display: flex;
   flex-direction: column;
@@ -1292,16 +1287,15 @@ textarea{
   transform: scale(1.03);
   box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.4);
   z-index: 1;
-  background-color: #adc0b8;
 }
-
-/*****************************************/
-/****************PROJECTS*****************/
-/*****************************************/
 
 .imageInProjects{ max-width: 300px;
-padding-top: 40px;
-}
+  padding-top: 40px;
+  }
+
+/*****************************************/
+/*********************************/
+/*****************************************/
 
 .mainfooter img{
   padding-right: 10px;
