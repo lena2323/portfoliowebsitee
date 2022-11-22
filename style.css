@@ -1,5 +1,5 @@
 body{
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Montserrat;
   background-color: #adc0b8;
   margin: 0;
 }
@@ -23,7 +23,7 @@ html {
   margin:auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items:center;
   margin-top: 0%;
   font-size:x-large;
@@ -450,6 +450,7 @@ code{
   display: flex;
   flex-direction: column;
   margin: auto;
+  padding-top: 0px;
 }
 
 .mainfooter img{
@@ -756,6 +757,7 @@ a.underlinewooshNaslovi:before{
   margin: 0px;
   margin-right: 20px;
   text-align: end;
+  width: 100vw;
 }
 
 .scroll-up-button-container a{
