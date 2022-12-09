@@ -11,6 +11,8 @@
     rel="stylesheet"
     href="https://unpkg.com/swiper/swiper-bundle.min.css"
   />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poiret+One&family=Staatliches&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -83,6 +85,18 @@
             </div>
             <div class="swiper-slide"> 
                 <img src="images/boo.png">
+            </div>
+            
+            <div class="swiper-slide"> 
+                <img src="images/reactlogo.png">
+            </div>
+            
+            <div class="swiper-slide"> 
+                <img src="images/sasslogo.png">
+            </div>
+            
+            <div class="swiper-slide"> 
+                <img src="images/muilogo.svg">
             </div>
         </div>
 
@@ -232,6 +246,9 @@
     <script>
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
+        autoplay: {
+        delay: 5000,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
