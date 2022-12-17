@@ -808,7 +808,7 @@ a.underlinewooshNaslovi:before{
 
 .swiper-slide img {
   display: block;
-  max-height: 300px;
+  max-height: 100px;
   width: auto;
   object-fit: cover;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
