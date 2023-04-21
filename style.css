@@ -359,6 +359,7 @@ h2:hover{
   margin-right: 20px;
   margin-top: 0px;
   width: 500px;
+  height: 500px;
   margin-bottom: 20px;
 }
 
@@ -424,7 +425,15 @@ text-shadow: 5px 2px 3px rgb(239,131,171) ;
 cursor:default;
 }
 
+.sectionInExperienceWork{
+margin-left: 0px !important;
+margin-right: 0px !important;
 
+}
+.experienceContainerWork{
+  gap: 20px;
+  justify-content: center;
+}
 .sectionInExperience{
   display: flex;
   flex-direction: column;
