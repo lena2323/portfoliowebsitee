@@ -1,54 +1,54 @@
 // Hamburger menu
-const navUL = document.getElementById('nav-ul');
-const navLink1 = document.getElementById('nav-link1');
-const navLink2 = document.getElementById('nav-link2');
-const navLink3 = document.getElementById('nav-link3');
-const navLink4 = document.getElementById('nav-link4');
-const navlinkExp = document.getElementById('nav-link-Exp');
+const navUL = document.getElementById("nav-ul");
+const navLink1 = document.getElementById("nav-link1");
+const navLink2 = document.getElementById("nav-link2");
+const navLink3 = document.getElementById("nav-link3");
+const navLink4 = document.getElementById("nav-link4");
+const navlinkExp = document.getElementById("nav-link-Exp");
 const hamburger = document.getElementById("hamburger");
 const navBar = document.getElementById("navbar");
 
-hamburger.addEventListener('click',() =>{
-  hamburger.classList.toggle('notActive');
-  navUL.classList.toggle('show');
-  navBar.classList.toggle('show');
-  navLink1.classList.add('animationForNavInHamburgerMenu');
-  navLink2.classList.add('animationForNavInHamburgerMenu');
-  navLink3.classList.add('animationForNavInHamburgerMenu');
-  navLink4.classList.add('animationForNavInHamburgerMenu');
-  navlinkExp.classList.add('animationForNavInHamburgerMenu');
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("notActive");
+  navUL.classList.toggle("show");
+  navBar.classList.toggle("show");
+  navLink1.classList.add("animationForNavInHamburgerMenu");
+  navLink2.classList.add("animationForNavInHamburgerMenu");
+  navLink3.classList.add("animationForNavInHamburgerMenu");
+  navLink4.classList.add("animationForNavInHamburgerMenu");
+  navlinkExp.classList.add("animationForNavInHamburgerMenu");
 });
 
 // Hamburger to open and close on link click
 
-navLink1.addEventListener('click',() =>{
+navLink1.addEventListener("click", () => {
   navUL.classList.remove("show");
-  hamburger.classList.add('notActive');
-  navBar.classList.remove('show');
+  hamburger.classList.add("notActive");
+  navBar.classList.remove("show");
 });
 
-navLink2.addEventListener('click',() =>{
+navLink2.addEventListener("click", () => {
   navUL.classList.remove("show");
-  hamburger.classList.add('notActive');
-  navBar.classList.remove('show');
+  hamburger.classList.add("notActive");
+  navBar.classList.remove("show");
 });
 
-navLink3.addEventListener('click',() =>{
+navLink3.addEventListener("click", () => {
   navUL.classList.remove("show");
-  hamburger.classList.add('notActive');
-  navBar.classList.remove('show');
+  hamburger.classList.add("notActive");
+  navBar.classList.remove("show");
 });
 
-navLink4.addEventListener('click',() =>{
+navLink4.addEventListener("click", () => {
   navUL.classList.remove("show");
-  hamburger.classList.add('notActive');
-  navBar.classList.remove('show');
+  hamburger.classList.add("notActive");
+  navBar.classList.remove("show");
 });
 
-navlinkExp.addEventListener('click',() =>{
+navlinkExp.addEventListener("click", () => {
   navUL.classList.remove("show");
-  hamburger.classList.add('notActive');
-  navBar.classList.remove('show');
+  hamburger.classList.add("notActive");
+  navBar.classList.remove("show");
 });
 
 /*********Animations oon scroll!**/
@@ -85,11 +85,11 @@ const handleScrollAnimation = () => {
     if (elementInView(el, 1.25)) {
       displayScrollElement(el);
     } else if (elementOutofView(el)) {
-      hideScrollElement(el)
+      hideScrollElement(el);
     }
-  })
-}
+  });
+};
 
-window.addEventListener("scroll", () => { 
+window.addEventListener("scroll", () => {
   handleScrollAnimation();
 });
