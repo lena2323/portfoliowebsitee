@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 body {
   font-family: "Philosopher", sans-serif;
   background-color: #adc0b8;
   margin: 0;
+  overflow-x: hidden;
 }
 
 input,
@@ -28,10 +31,7 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url(images/Picture1.png);
-  background-position: center right;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   padding-bottom: 100px;
   margin-top: 0%;
   font-size: x-large;
@@ -42,7 +42,14 @@ html {
   padding-top: 20px;
 }
 
-.navbar img {
+.navbarBgImg {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  top: 0;
+}
+
+.navbar .logo {
   max-width: 100px;
   padding-top: 10px;
   margin-bottom: 0px;
@@ -50,7 +57,9 @@ html {
 }
 
 h3 {
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 20px;
   letter-spacing: 0.1em;
 }
@@ -73,6 +82,7 @@ li {
 
 .navbar a {
   font-family: "Times New Roman", Times, serif;
+  z-index: 9;
 }
 
 .banner {
@@ -242,7 +252,9 @@ h2:hover {
 /*********Footer*************/
 .footerText {
   text-align: center;
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: large;
 }
 
@@ -260,6 +272,8 @@ h2:hover {
   padding-bottom: 80px;
   margin: auto;
   background-color: rgb(237, 237, 238);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .aboutMeContainer p {
@@ -337,7 +351,7 @@ h2:hover {
   padding-right: 50px;
   padding-left: 50px;
   padding-top: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 70px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -398,7 +412,13 @@ h2:hover {
   margin: 0%;
   padding: 0%;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 70px;
 }
 
 .experienceH2 {
@@ -409,6 +429,7 @@ h2:hover {
   letter-spacing: 0.2em;
   margin: 0%;
   padding-bottom: 70px;
+  padding-top: 70px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -434,9 +455,6 @@ h2:hover {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 50px;
   padding: 40px;
   background-color: rgb(237, 237, 238);
   border: 2px solid #adc0b8;
@@ -707,25 +725,15 @@ a.underlinewooshNaslovi:before {
 /****************DIVIDERS*********************/
 
 .sectionDivider1 {
-  background-image: url(images/testnavbar-mirror.png);
   width: 100%;
-  height: 180px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-bottom: 0%;
-  margin-bottom: 0%;
+  height: auto;
 }
 
 .sectionDivider2 {
-  background-image: url(images/testnavbar.png);
   width: 100%;
-  margin-top: 0px;
-  background-size: cover;
-  padding-bottom: 0%;
-  margin-bottom: 0%;
-  height: 180px;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  height: auto;
+  position: relative;
+  top: 2px;
 }
 /************ANIMATION on the banner****************/
 
@@ -772,10 +780,15 @@ a.underlinewooshNaslovi:before {
   flex-direction: column;
   padding: 0%;
   margin: 0px;
-  margin-right: 20px;
+  padding-right: 20px;
   text-align: end;
+  background-color: rgb(237, 237, 238);
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-
+.scroll-up-button {
+  width: 50px;
+}
 .scroll-up-button-container a {
   text-decoration: none;
 }
@@ -799,6 +812,8 @@ a.underlinewooshNaslovi:before {
 .swiper {
   width: 100%;
   height: 100%;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
 .swiper-slide {
@@ -808,7 +823,7 @@ a.underlinewooshNaslovi:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
+  display: flex !important;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -850,12 +865,13 @@ a.underlinewooshNaslovi:before {
 }
 
 input::placeholder {
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
   font-weight: 700;
 }
 
 textarea::placeholder {
-  font-family: "Gloria Hallelujah", cursive;
   font-weight: 700;
 }
 
@@ -1328,10 +1344,10 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
     margin-bottom: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
     padding-top: 20px;
     padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .projects img {
