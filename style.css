@@ -264,6 +264,12 @@ h2:hover {
 
 /******************ABOUT ME******************/
 
+.aboutMeOuterContainer {
+  background-color: rgb(237, 237, 238);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .aboutMeContainer {
   display: flex;
   flex-direction: row;
@@ -274,6 +280,7 @@ h2:hover {
   background-color: rgb(237, 237, 238);
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 1600px;
 }
 
 .aboutMeContainer p {
@@ -354,6 +361,13 @@ h2:hover {
   padding-bottom: 70px;
   display: flex;
   flex-wrap: wrap;
+  max-width: 1600px;
+  gap: 20px;
+}
+.projectsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .projects img {
@@ -368,12 +382,9 @@ h2:hover {
   justify-self: center;
   border: 20px solid rgb(237, 237, 238);
   background-color: #ededee;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-top: 0px;
-  width: 500px;
+  width: 400px;
   height: 500px;
-  margin-bottom: 20px;
 }
 
 .singleProjectContainer p {
@@ -406,7 +417,12 @@ h2:hover {
 /*****************************************/
 /****************EXPERIENCE***************/
 /*****************************************/
-
+.experienceOuterContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(237, 237, 238);
+}
 .experienceContainer {
   background-color: rgb(237, 237, 238);
   margin: 0%;
@@ -419,6 +435,7 @@ h2:hover {
   justify-content: center;
   gap: 20px;
   padding-bottom: 70px;
+  max-width: 1600px;
 }
 
 .experienceH2 {
@@ -809,11 +826,16 @@ a.underlinewooshNaslovi:before {
 
 /************SWIPER*********************/
 
-.swiper {
+.swiperContainer {
   width: 100%;
   height: 100%;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+.swiper {
+  max-width: 1600px;
 }
 
 .swiper-slide {
@@ -877,11 +899,11 @@ textarea::placeholder {
 
 .download-button {
   position: fixed;
-  background-color: rgb(255, 255, 255);
+  background-color: #adc0b8;
   bottom: 15px;
   left: 15px;
   z-index: 20;
-  border: 1px solid rgb(187, 255, 0);
+  border: 1px solid #ededee;
   padding: 10px;
 }
 
@@ -1390,7 +1412,7 @@ textarea::placeholder {
   }
 
   .swiper-wrapper img {
-    height: 300px;
+    height: 40px;
     width: auto;
   }
 
