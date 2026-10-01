@@ -1474,6 +1474,7 @@ textarea::placeholder {
   .mainfooter {
     position: relative;
     margin-top: 0px;
+    padding-bottom: 62px;
   }
 
   /**************Swiper****************/
