@@ -576,25 +576,29 @@
 
     <script>
       var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 0,
+        spaceBetween: 10,
+
         autoplay: {
           delay: 5000,
         },
+
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
+
+        slidesPerView: 2,
+
         breakpoints: {
-          4: {
-            slidesPerView: 2,
-          },
           768: {
             slidesPerView: 5,
           },
+
           1024: {
             slidesPerView: 10,
           },
         },
+
         rewind: true,
       });
     </script>
