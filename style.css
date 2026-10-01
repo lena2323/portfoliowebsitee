@@ -1,10 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+:root {
+  --clr-main: #adc0b8;
+  --clr-accent: #7bcb72;
+  --clr-main2: #ededee;
+  --clr-accent2: #ef83ab;
+}
+
 body {
   font-family: "Philosopher", sans-serif;
-  background-color: #adc0b8;
+  background-color: var(--clr-main);
   margin: 0;
   overflow-x: hidden;
+}
+
+*::selection {
+  background: var(--clr-accent);
+  color: #ffffff;
+}
+*::-moz-selection {
+  background: var(--clr-accent);
+  color: #ffffff;
+}
+*::-webkit-selection {
+  background: var(--clr-accent);
+  color: #ffffff;
 }
 
 input,
@@ -119,8 +139,8 @@ li {
   display: block;
   width: 30px;
   height: 30px;
-  border-bottom: 5px solid #adc0b8;
-  border-right: 5px solid #adc0b8;
+  border-bottom: 5px solid var(--clr-main);
+  border-right: 5px solid var(--clr-main);
   transform: rotate(45deg);
   animation: animate 2s infinite;
 }
@@ -145,13 +165,13 @@ li {
 }
 
 .links {
-  color: rgb(239, 131, 171);
+  color: var(--clr-accent);
 
   text-decoration: none;
 }
 
-.links:hover {
-  color: rgb(209, 0, 157);
+.singleProjectContainer:hover .links {
+  color: var(--clr-accent);
 }
 
 /*****Testing scrolling animation*******/
@@ -189,7 +209,7 @@ li {
 }
 
 .banner h1:hover {
-  text-shadow: 5px 2px 3px rgb(239, 131, 171);
+  text-shadow: 5px 2px 3px var(--clr-accent);
 }
 .navItems a {
   position: relative;
@@ -200,12 +220,12 @@ li {
 }
 
 .navItems:hover {
-  text-shadow: 5px 2px 3px rgb(239, 131, 171);
+  text-shadow: 5px 2px 3px var(--clr-accent);
 }
 
 .logo:hover {
   -webkit-filter: drop-shadow(1px 2px 1px rgb(0, 187, 1710));
-  filter: drop-shadow(1px 2px 1px rgb(239, 131, 171));
+  filter: drop-shadow(1px 2px 1px var(--clr-accent));
 }
 
 /**************Art of web development*****************/
@@ -232,8 +252,6 @@ li {
   padding-bottom: 70px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
   cursor: default;
 }
 
@@ -246,7 +264,7 @@ h2 {
 }
 
 h2:hover {
-  text-shadow: 5px 2px 3px rgb(239, 131, 171);
+  text-shadow: 5px 2px 3px var(--clr-accent);
 }
 
 /*********Footer*************/
@@ -259,13 +277,13 @@ h2:hover {
 }
 
 .footerText:hover {
-  text-shadow: 5px 2px 3px rgb(239, 131, 171);
+  text-shadow: 5px 2px 3px var(--clr-accent);
 }
 
 /******************ABOUT ME******************/
 
 .aboutMeOuterContainer {
-  background-color: rgb(237, 237, 238);
+  background-color: var(--clr-main2);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -277,7 +295,7 @@ h2:hover {
   padding-top: 0px;
   padding-bottom: 80px;
   margin: auto;
-  background-color: rgb(237, 237, 238);
+  background-color: var(--clr-main2);
   padding-left: 20px;
   padding-right: 20px;
   max-width: 1600px;
@@ -292,11 +310,12 @@ h2:hover {
 .aboutMeContainer img {
   max-width: 700px;
   padding-right: 20px;
+  width: 50%;
 }
 
 .aboutMeContainer img:hover {
   -webkit-filter: drop-shadow(1px 2px 1px rgb(0, 187, 1710));
-  filter: drop-shadow(1px 2px 1px rgb(239, 131, 171));
+  filter: drop-shadow(1px 2px 1px var(--clr-accent));
 }
 
 .containerImagesForTools img {
@@ -307,15 +326,13 @@ h2:hover {
   text-align: center;
   font-family: "Staatliches", cursive;
   font-size: 30px;
-  background-color: #adc0b8;
+  background-color: var(--clr-main);
   padding: 0%;
   margin: 0%;
   padding-bottom: 50px;
   letter-spacing: 0.2em;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
   cursor: default;
 }
 
@@ -337,7 +354,7 @@ h2:hover {
   margin-right: 0%;
   padding-top: 20px;
   padding-bottom: 10px;
-  background-color: #adc0b8;
+  background-color: var(--clr-main);
 }
 
 .textInProjects {
@@ -380,8 +397,8 @@ h2:hover {
   flex-direction: column;
   text-align: center;
   justify-self: center;
-  border: 20px solid rgb(237, 237, 238);
-  background-color: #ededee;
+  border: 20px solid var(--clr-main2);
+  background-color: var(--clr-main2);
   margin-top: 0px;
   width: 400px;
   height: 500px;
@@ -393,17 +410,13 @@ h2:hover {
   text-align: center;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
   cursor: default;
 }
 
 .singleProjectContainer h3 {
-  background-color: rgb(237, 237, 238);
+  background-color: var(--clr-main2);
   padding: 0px;
   margin: 0px;
-  padding-top: 40px;
-  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -421,10 +434,10 @@ h2:hover {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgb(237, 237, 238);
+  background-color: var(--clr-main2);
 }
 .experienceContainer {
-  background-color: rgb(237, 237, 238);
+  background-color: var(--clr-main2);
   margin: 0%;
   padding: 0%;
   display: flex;
@@ -439,7 +452,7 @@ h2:hover {
 }
 
 .experienceH2 {
-  background-color: rgb(237, 237, 238);
+  background-color: var(--clr-main2);
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
@@ -449,17 +462,17 @@ h2:hover {
   padding-top: 70px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
   cursor: default;
   font-family: "Staatliches", cursive;
 }
 
-.sectionInExperience h3:hover {
-  text-shadow: 5px 2px 3px rgb(239, 131, 171);
+.sectionInExperience:hover h3 {
+  text-shadow: 5px 2px 3px var(--clr-accent);
   cursor: default;
 }
-
+.sectionInExperience a:hover {
+  color: var(--clr-accent2);
+}
 .sectionInExperienceWork {
   margin-left: 0px !important;
   margin-right: 0px !important;
@@ -473,10 +486,9 @@ h2:hover {
   flex-direction: column;
   text-align: left;
   padding: 40px;
-  background-color: rgb(237, 237, 238);
-  border: 2px solid #adc0b8;
+  background-color: var(--clr-main2);
+  border: 2px solid var(--clr-main);
   width: 400px;
-  border-radius: 5px;
   letter-spacing: 0.1em;
 }
 
@@ -487,7 +499,7 @@ code {
 /****************FOOTER*******************/
 /*****************************************/
 .mainfooter {
-  background-color: #adc0b8;
+  background-color: var(--clr-main);
   font-family: "Times New Roman", Times, serif;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -504,7 +516,7 @@ code {
 
 .mainfooter img:hover {
   -webkit-filter: drop-shadow(1px 2px 1px rgb(0, 187, 1710));
-  filter: drop-shadow(1px 2px 1px rgb(239, 131, 171));
+  filter: drop-shadow(1px 2px 1px var(--clr-accent));
 }
 
 .mainfooter img:active {
@@ -516,7 +528,7 @@ code {
 /****************FORMS*****************/
 /*****************************************/
 .contact {
-  background-color: rgb(237, 237, 238);
+  background-color: var(--clr-main2);
   padding: 20px;
   padding-bottom: 0px;
   padding-top: 20px;
@@ -563,9 +575,9 @@ code {
   color: black;
   background-image: linear-gradient(
     to right,
-    #adc0b8 0%,
-    rgb(237, 237, 238) 60%,
-    #adc0b8 100%
+    var(--clr-main) 0%,
+    var(--clr-main2) 60%,
+    var(--clr-main) 100%
   );
   flex: 1 1 1;
   transition: 0.5s;
@@ -581,7 +593,7 @@ button:hover {
   background-image: linear-gradient(
     to right,
     #638174 0%,
-    rgb(237, 237, 238) 60%,
+    var(--clr-main2) 60%,
     #638174 100%
   );
 }
@@ -674,7 +686,7 @@ p.underlinewoosh:before {
   height: 3px;
   bottom: -20px;
   left: 0;
-  background-color: rgb(239, 131, 171);
+  background-color: var(--clr-accent);
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -700,7 +712,7 @@ p.underlinewooshContact:before {
   height: 3.5px;
   bottom: 0px;
   left: 0;
-  background-color: rgb(239, 131, 171);
+  background-color: var(--clr-accent);
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -725,7 +737,7 @@ a.underlinewooshNaslovi:before {
   height: 2px;
   bottom: -7px;
   left: 0;
-  background-color: rgb(239, 131, 171);
+  background-color: var(--clr-accent);
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
@@ -736,7 +748,7 @@ a.underlinewooshNaslovi:before {
 /*****************************************/
 
 .mainfooter p:hover {
-  text-shadow: 5px 2px 3px rgb(239, 131, 171);
+  text-shadow: 5px 2px 3px var(--clr-accent);
 }
 
 /****************DIVIDERS*********************/
@@ -799,7 +811,7 @@ a.underlinewooshNaslovi:before {
   margin: 0px;
   padding-right: 20px;
   text-align: end;
-  background-color: rgb(237, 237, 238);
+  background-color: var(--clr-main2);
   justify-content: flex-end;
   align-items: flex-end;
 }
@@ -816,7 +828,7 @@ a.underlinewooshNaslovi:before {
 
 .scroll-up-button img:hover {
   -webkit-filter: drop-shadow(1px 2px 1px rgb(0, 187, 1710));
-  filter: drop-shadow(1px 2px 1px rgb(239, 131, 171));
+  filter: drop-shadow(1px 2px 1px var(--clr-accent));
 }
 
 .scroll-up-button img:active {
@@ -844,6 +856,7 @@ a.underlinewooshNaslovi:before {
   margin: 0 !important;
   overflow: hidden;
   box-sizing: border-box;
+  height: 200px;
 }
 
 .swiper-wrapper {
@@ -857,7 +870,7 @@ a.underlinewooshNaslovi:before {
   min-width: 0;
   text-align: center;
   font-size: 18px;
-  background-color: #adc0b8;
+  background-color: var(--clr-main);
 
   display: flex !important;
   justify-content: center;
@@ -870,7 +883,6 @@ a.underlinewooshNaslovi:before {
   width: auto;
   max-width: 100%;
   object-fit: cover;
-
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -878,15 +890,15 @@ a.underlinewooshNaslovi:before {
 }
 
 .swiper-button-prev {
-  color: rgb(239, 131, 171) !important;
+  color: var(--clr-accent) !important;
 }
 
 .swiper-button-next {
-  color: rgb(239, 131, 171) !important;
+  color: var(--clr-accent) !important;
 }
 
 .swiper-pagination-bullet {
-  background-color: rgb(239, 131, 171) !important;
+  background-color: var(--clr-accent2) !important;
   max-width: 10px !important;
   height: 8px !important;
   border-radius: 0 !important;
@@ -907,14 +919,15 @@ textarea::placeholder {
 
 .download-button {
   position: fixed;
-  background-color: #adc0b8;
+  background-color: var(--clr-main);
   text-decoration: none;
   color: #fff;
-  bottom: 15px;
-  left: 15px;
+  bottom: 20px;
+  left: 20px;
   z-index: 20;
-  border: 1px solid #ededee;
+  border: 1px solid var(--clr-main2);
   padding: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .download-button:active:focus {
@@ -923,8 +936,9 @@ textarea::placeholder {
 }
 
 .download-button:hover {
-  background-color: #adc0b8;
-  color: white;
+  background-color: var(--clr-main2);
+  color: black;
+  border-color: var(--clr-main);
 }
 
 /***************************************************************
@@ -949,12 +963,16 @@ textarea::placeholder {
   .navbar.show {
     background-image: url(images/Picture33.png);
     background-position: center;
+    background-repeat: no-repeat;
   }
 
   .logo {
     display: none;
   }
-
+  .navbarBgImg {
+    width: auto;
+    left: -260px;
+  }
   /**************** HAMBURGER ****************/
 
   .nav-ul {
@@ -1019,17 +1037,17 @@ textarea::placeholder {
   .navItems a {
     position: relative;
     text-decoration: none;
-    color: black;
+    color: var(--clr-main2);
     font-family: Arial, Helvetica, sans-serif;
   }
 
   .navItems:hover {
-    text-shadow: 5px 2px 3px rgb(239, 131, 171);
+    text-shadow: 5px 2px 3px var(--clr-accent);
   }
 
   .logo:hover {
-    -webkit-filter: drop-shadow(1px 2px 1px rgb(239, 131, 171));
-    filter: drop-shadow(1px 2px 1px rgb(239, 131, 171));
+    -webkit-filter: drop-shadow(1px 2px 1px var(--clr-accent));
+    filter: drop-shadow(1px 2px 1px var(--clr-accent));
   }
 
   /**************** SMALLER HAMBURGER ****************/
@@ -1061,7 +1079,7 @@ textarea::placeholder {
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     height: 5px;
-    background: rgb(237, 237, 238);
+    background: var(--clr-main2);
     transition: all 0.3s;
     position: relative;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -1241,7 +1259,7 @@ textarea::placeholder {
     padding-right: 0px;
     margin-left: 0px;
     padding-left: 0px;
-    background-color: rgb(237, 237, 238);
+    background-color: var(--clr-main2);
     max-width: 400px;
   }
 
@@ -1264,7 +1282,7 @@ textarea::placeholder {
   }
 
   .contact {
-    background-color: rgb(237, 237, 238);
+    background-color: var(--clr-main2);
     padding: 20px;
     padding-bottom: 0px;
     padding-top: 20px;
@@ -1369,9 +1387,9 @@ textarea::placeholder {
     color: black;
     background-image: linear-gradient(
       to right,
-      #adc0b8 0%,
-      rgb(237, 237, 238) 51%,
-      #adc0b8 100%
+      var(--clr-main) 0%,
+      var(--clr-main2) 51%,
+      var(--clr-main) 100%
     );
     flex: 1 1 1;
     transition: 0.5s;
@@ -1487,8 +1505,8 @@ textarea::placeholder {
     display: block;
     width: 30px;
     height: 30px;
-    border-bottom: 5px solid #adc0b8;
-    border-right: 5px solid #adc0b8;
+    border-bottom: 5px solid var(--clr-main);
+    border-right: 5px solid var(--clr-main);
     transform: rotate(45deg);
     animation: animate 2s infinite;
   }
