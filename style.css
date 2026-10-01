@@ -206,6 +206,8 @@ li {
   margin: auto;
   padding-right: 0px;
   letter-spacing: 0.1em;
+  max-width: 1600px;
+  width: 100%;
 }
 
 .banner h1:hover {
@@ -249,10 +251,12 @@ li {
   font-family: "Staatliches", cursive;
   font-size: 30px;
   letter-spacing: 0.2em;
-  padding-bottom: 70px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
   cursor: default;
+  padding: 70px 20px;
+  max-width: 1600px;
+  width: auto;
 }
 
 .textInH2 a {
@@ -327,13 +331,14 @@ h2:hover {
   font-family: "Staatliches", cursive;
   font-size: 30px;
   background-color: var(--clr-main);
-  padding: 0%;
   margin: 0%;
   padding-bottom: 50px;
   letter-spacing: 0.2em;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
   cursor: default;
+  max-width: 1600px;
+  padding: 20px 20px 0 20px;
 }
 
 #stack-for-nav-link {
@@ -458,11 +463,11 @@ h2:hover {
   font-size: 30px;
   letter-spacing: 0.2em;
   margin: 0%;
-  padding-bottom: 70px;
-  padding-top: 70px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
   cursor: default;
+  padding: 70px 20px;
+  max-width: 1600px;
   font-family: "Staatliches", cursive;
 }
 
@@ -494,6 +499,15 @@ h2:hover {
 
 code {
   background-color: #b9c9c2;
+}
+
+.experienceContainerSkills .sectionInExperience {
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*****************************************/
 /****************FOOTER*******************/
@@ -1230,8 +1244,9 @@ textarea::placeholder {
   .banner h1 {
     font-size: 4vh;
     padding-right: 0px;
-    width: 400px;
+    width: auto;
     margin: 0;
+    padding: 0 20px;
   }
 
   .aboutMeAllTextContainer {
@@ -1280,7 +1295,9 @@ textarea::placeholder {
     align-items: center;
     padding-bottom: 20px;
   }
-
+  .experienceContainerSkills .sectionInExperience {
+    width: 100%;
+  }
   .contact {
     background-color: var(--clr-main2);
     padding: 20px;
