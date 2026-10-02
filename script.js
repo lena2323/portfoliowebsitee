@@ -93,3 +93,18 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", () => {
   handleScrollAnimation();
 });
+
+let lastScrollY = window.scrollY;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+  const currentScrollY = window.scrollY;
+
+  if (currentScrollY > lastScrollY && currentScrollY > 100) {
+    navbar.classList.add("navbar-hidden");
+  } else {
+    navbar.classList.remove("navbar-hidden");
+  }
+
+  lastScrollY = currentScrollY;
+});
