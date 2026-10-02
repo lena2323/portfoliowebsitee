@@ -877,6 +877,7 @@ a.underlinewooshNaslovi:before {
   overflow: hidden;
   box-sizing: border-box;
   height: 200px;
+  margin-bottom: 90px !important;
 }
 
 .swiper-wrapper {
