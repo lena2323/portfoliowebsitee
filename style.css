@@ -1079,7 +1079,9 @@ textarea::placeholder {
 
   .navbarBgImg {
     width: auto;
-    height: 160px;
+    height: 132px;
+    position: relative;
+    left: 512px;
   }
   .hamburgerContainer {
     margin: auto;
