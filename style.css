@@ -1012,7 +1012,8 @@ textarea::placeholder {
     padding: 0%;
     margin: 0%;
     padding-right: 10px;
-    padding-top: 70px;
+    padding-top: 0px;
+    padding-bottom: 80px;
   }
 
   .navItems {
@@ -1082,6 +1083,7 @@ textarea::placeholder {
     height: 132px;
     position: relative;
     left: 512px;
+    background-color: transparent;
   }
   .hamburgerContainer {
     margin: auto;
@@ -1094,7 +1096,9 @@ textarea::placeholder {
     right: 45px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-
+  .show .navbarBgImg {
+    background-color: var(--clr-main);
+  }
   .hamburger {
     display: flex;
     flex-direction: column;
