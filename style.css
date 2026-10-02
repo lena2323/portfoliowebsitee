@@ -887,7 +887,6 @@ a.underlinewooshNaslovi:before {
   text-align: center;
   font-size: 18px;
   background-color: var(--clr-main);
-
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -895,7 +894,6 @@ a.underlinewooshNaslovi:before {
 
 .swiper-slide img {
   display: block;
-  height: 50px;
   width: auto;
   max-width: 100%;
   object-fit: cover;
@@ -903,8 +901,16 @@ a.underlinewooshNaslovi:before {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  height: 50px;
 }
-
+.swiper-slide .fa-brands {
+  font-size: 50px;
+}
+.swiper-slide img:hover,
+.swiper-slide .fa-brands:hover {
+  -webkit-filter: drop-shadow(1px 2px 1px rgb(0, 187, 1710));
+  filter: drop-shadow(1px 2px 1px var(--clr-accent));
+}
 .swiper-button-prev {
   color: var(--clr-accent) !important;
 }
@@ -915,9 +921,10 @@ a.underlinewooshNaslovi:before {
 
 .swiper-pagination-bullet {
   background-color: var(--clr-accent2) !important;
-  max-width: 10px !important;
-  height: 8px !important;
-  border-radius: 0 !important;
+  max-width: 23px !important;
+  width: 23px !important;
+  height: 4px !important;
+  border-radius: 4px !important;
 }
 
 /*******************/
@@ -1501,15 +1508,24 @@ textarea::placeholder {
     margin-bottom: 30px;
   }
 
+  .swiper-slide .fa-brands {
+    font-size: 30px;
+  }
+  .swiper-slide img {
+    height: 30px;
+  }
   .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
     min-width: 0;
     box-sizing: border-box;
   }
-
-  .swiper-wrapper img {
-    height: 40px;
-    width: auto;
-    max-width: 100%;
+  .swiper-slide i {
+    font-size: 70px;
+    display: block;
+    text-align: center;
   }
 
   /************Arrows in the Banner section***********/

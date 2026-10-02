@@ -26,6 +26,10 @@
       href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <div id="top"></div>
@@ -56,7 +60,9 @@
           <a href="#stack-for-nav-link" id="nav-link2"><h3>My stack</h3></a>
         </li>
         <li class="navItems">
-          <a href="#experience" id="nav-link-Exp"><h3>Experience</h3></a>
+          <a href="#experience-for-nav-link" id="nav-link-Exp"
+            ><h3>Experience</h3></a
+          >
         </li>
         <li class="navItems">
           <a href="#projects-for-nav-link" id="nav-link3"><h3>Projects</h3></a>
@@ -130,44 +136,47 @@
       <div class="swiper mySwiper scroll-element js-scroll fade-in-bottom">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="images/w3_html5-ar21.svg" alt="skill 1 image" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/w3_css-ar21.svg" alt="skill 2 image" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/javascript-horizontal.svg" alt="skill 3 image" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/git-scm-ar21.svg" alt="skill 4 image" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/github-ar21.svg" alt="skill 5 image" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/getbootstrap-ar21.svg" alt="skill 6 image" />
+            <i class="fa-brands fa-html5" aria-label="HTML5"></i>
           </div>
 
           <div class="swiper-slide">
-            <img src="images/reactlogo.svg" alt="skill 7 image" />
+            <i class="fa-brands fa-css3-alt" aria-label="CSS3"></i>
           </div>
+
           <div class="swiper-slide">
-            <img src="images/sasslogo.png" alt="skill 8 image" />
+            <i class="fa-brands fa-js" aria-label="JavaScript"></i>
           </div>
+
           <div class="swiper-slide">
-            <img src="images/muilogo.svg" alt="skill 9 image" />
+            <i class="fa-brands fa-git-alt" aria-label="Git"></i>
           </div>
+
           <div class="swiper-slide">
-            <img src="images/tailwindcss-ar21.svg" alt="skill 10 image" />
+            <i class="fa-brands fa-github" aria-label="GitHub"></i>
           </div>
+
           <div class="swiper-slide">
-            <img src="images/yarnpkg-ar21.svg" alt="skill 11 image" />
+            <i class="fa-brands fa-bootstrap" aria-label="Bootstrap"></i>
           </div>
+
           <div class="swiper-slide">
-            <img src="images/js_webpack-ar21.svg" alt="skill 12 image" />
+            <i class="fa-brands fa-react" aria-label="React"></i>
           </div>
+
           <div class="swiper-slide">
-            <img src="images/eslint-ar21.svg" alt="skill 13 image" />
+            <i class="fa-brands fa-sass" aria-label="Sass"></i>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/muilogo.png" alt="Material UI" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/tailwind.png" alt="Tailwind CSS" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/eslint.png" alt="eslint" />
           </div>
         </div>
 
@@ -177,6 +186,7 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+    <div id="experience-for-nav-link"></div>
     <div class="sectionDivider2">
       <img
         id="experience"
@@ -607,7 +617,7 @@
           clickable: true,
         },
 
-        slidesPerView: 2,
+        slidesPerView: 5,
 
         breakpoints: {
           768: {
