@@ -170,7 +170,6 @@ li {
 
 .links {
   color: var(--clr-accent);
-
   text-decoration: none;
 }
 
@@ -203,20 +202,52 @@ li {
   }
 }
 
-/*****Testing scrolling animation*******/
+/***************************Banner text******************/
 
-.banner h1 {
-  font-size: 70px;
-  margin: auto;
+.banner p {
   padding-right: 0px;
   letter-spacing: 0.1em;
   max-width: 1600px;
   width: 100%;
+  font-size: 72px;
+  margin: 0;
 }
 
-.banner h1:hover {
-  text-shadow: 5px 2px 3px var(--clr-accent);
+.cursor-text {
+  position: relative;
+  display: inline-block;
 }
+
+.cursor-text span {
+  position: relative;
+  z-index: 1;
+}
+
+.cursor-text::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: transparent;
+  text-shadow: 5px 2px 3px var(--clr-accent);
+  pointer-events: none;
+  clip-path: circle(50px at var(--mouse-x) var(--mouse-y));
+  opacity: 0;
+}
+
+.cursor-text:hover::after {
+  opacity: 1;
+}
+
+.cursor-text-span {
+  color: var(--clr-accent);
+}
+
+/*****************************************/
+
 .navItems a {
   position: relative;
   text-decoration: none;
@@ -1263,14 +1294,13 @@ textarea::placeholder {
     padding-top: 20px;
   }
 
-  .banner h1 {
-    font-size: 32px;
-    padding-right: 0px;
+  .banner p {
+    font-size: 32px !important;
+    padding-right: 0;
     width: auto;
     margin: 0;
     padding: 0 20px;
   }
-
   .aboutMeAllTextContainer {
     text-align: left;
   }

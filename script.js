@@ -108,3 +108,15 @@ window.addEventListener("scroll", () => {
 
   lastScrollY = currentScrollY;
 });
+
+const cursorTexts = document.querySelectorAll(".cursor-text");
+
+cursorTexts.forEach((cursorText) => {
+  cursorText.addEventListener("mousemove", (e) => {
+    const rect = cursorText.getBoundingClientRect();
+
+    cursorText.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`);
+
+    cursorText.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
+  });
+});
