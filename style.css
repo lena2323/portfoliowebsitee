@@ -1301,6 +1301,12 @@ textarea::placeholder {
     margin: 0;
     padding: 0 20px;
   }
+  .cursor-text::after {
+    display: none;
+  }
+  .banner p:hover {
+    text-shadow: 5px 2px 3px var(--clr-accent);
+  }
   .aboutMeAllTextContainer {
     text-align: left;
   }
