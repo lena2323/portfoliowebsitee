@@ -549,7 +549,7 @@ h2:hover {
   text-shadow: 5px 2px 3px var(--clr-accent);
   cursor: default;
 }
-.sectionInExperience a:hover {
+.sectionInExperience p a:hover {
   color: var(--clr-accent2);
 }
 .sectionInExperienceWork {
