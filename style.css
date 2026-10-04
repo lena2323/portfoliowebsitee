@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 
 :root {
   --clr-main: #adc0b8;
@@ -48,7 +49,7 @@ html {
   margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding-bottom: 100px;
   margin-top: 0;
@@ -80,14 +81,50 @@ html {
   margin-top: -30px;
 }
 
+.navbar .logotext {
+  font-family: "Monoton", cursive;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--clr-main2);
+  margin-bottom: 0px;
+  margin-top: -30px;
+  margin-bottom: 6px;
+  background-color: var(--clr-main);
+  text-shadow: 3px 2px 6px #000000;
+  padding: 2px 6px;
+}
+.navbar .logotext:hover {
+  text-shadow: 5px 2px 3px var(--clr-accent);
+}
 h3 {
   font-family: "PT Serif", serif;
   font-weight: 700;
   font-style: normal;
+  color: var(--clr-main2);
+  font-size: 20px;
+  text-shadow: 3px 2px 6px #000000;
+  letter-spacing: 0.1em;
+  padding: 2px 6px;
+  background-color: var(--clr-main);
+}
+h3:hover {
+  text-shadow: 5px 2px 3px var(--clr-accent);
+}
+h4 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #000;
   font-size: 20px;
   letter-spacing: 0.1em;
+  padding: 2px 6px;
 }
-
+h4:hover {
+  text-shadow: 5px 2px 3px var(--clr-accent);
+}
+h3:hover {
+  text-shadow: 5px 2px 3px var(--clr-accent);
+}
 ul {
   display: flex;
   flex-direction: row;
@@ -508,7 +545,7 @@ h2:hover {
   font-family: "Staatliches", cursive;
 }
 
-.sectionInExperience:hover h3 {
+.sectionInExperience:hover p {
   text-shadow: 5px 2px 3px var(--clr-accent);
   cursor: default;
 }
@@ -999,7 +1036,12 @@ textarea::placeholder {
   color: black;
   border-color: var(--clr-main);
 }
-
+@media only screen and (max-width: 1024px) {
+  .navbar h3,
+  .navbar .logotext {
+    font-size: 16px;
+  }
+}
 /***************************************************************
 ***************************RESPONSIVE***************************
 ****************************************************************
@@ -1029,6 +1071,12 @@ textarea::placeholder {
     display: none;
   }
 
+  .navbar .logotext {
+    position: absolute;
+    left: 24px;
+    top: 47px;
+    color: var(--clr-main2);
+  }
   /**************** HAMBURGER ****************/
 
   .nav-ul {
