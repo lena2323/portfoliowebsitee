@@ -109,6 +109,7 @@ window.addEventListener("scroll", () => {
   lastScrollY = currentScrollY;
 });
 
+/**cute text shadow on hover **/
 const cursorTexts = document.querySelectorAll(".cursor-text");
 
 cursorTexts.forEach((cursorText) => {
@@ -120,3 +121,5 @@ cursorTexts.forEach((cursorText) => {
     cursorText.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
   });
 });
+
+/* airplane animation */

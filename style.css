@@ -210,8 +210,8 @@ li {
   text-decoration: none;
 }
 
-.singleProjectContainer:hover .links {
-  color: var(--clr-accent);
+.singleProjectContainer:hover h4 {
+  text-shadow: 5px 2px 3px var(--clr-accent);
 }
 
 /*****Testing scrolling animation*******/
@@ -545,11 +545,11 @@ h2:hover {
   font-family: "Staatliches", cursive;
 }
 
-.sectionInExperience:hover p {
+.sectionInExperience:hover h4 {
   text-shadow: 5px 2px 3px var(--clr-accent);
   cursor: default;
 }
-.sectionInExperience p a:hover {
+.sectionInExperience a:hover {
   color: var(--clr-accent2);
 }
 .sectionInExperienceWork {
@@ -692,7 +692,7 @@ input[type="email"] {
   height: 50px;
   background-color: transparent;
   border: none;
-  border-bottom: rgb(114, 201, 223) solid 1px;
+  border-bottom: var(--clr-main) solid 1px;
 }
 
 input[type="email"]:focus {
@@ -707,7 +707,7 @@ input[type="text"] {
   color: black;
   background-color: transparent;
   border: none;
-  border-bottom: rgb(114, 201, 223) solid 1px;
+  border-bottom: var(--clr-main) solid 1px;
 }
 
 input[type="text"]:focus {
@@ -745,7 +745,7 @@ textarea {
   background-color: transparent;
   justify-content: center;
   border: none;
-  border-bottom: rgb(114, 201, 223) solid 1px;
+  border-bottom: var(--clr-main) solid 1px;
   margin-bottom: -23px;
 }
 
@@ -1449,7 +1449,7 @@ textarea::placeholder {
     height: 50px;
     background-color: transparent;
     border: none;
-    border-bottom: rgb(114, 201, 223) solid 1px;
+    border-bottom: var(--clr-main) solid 1px;
   }
 
   input[type="text"] {
@@ -1460,7 +1460,7 @@ textarea::placeholder {
     color: black;
     background-color: transparent;
     border: none;
-    border-bottom: rgb(114, 201, 223) solid 1px;
+    border-bottom: var(--clr-main) solid 1px;
   }
 
   .msg input[type="text"] {
@@ -1482,7 +1482,7 @@ textarea::placeholder {
     background-color: transparent;
     justify-content: center;
     border: none;
-    border-bottom: rgb(114, 201, 223) solid 1px;
+    border-bottom: var(--clr-main) solid 1px;
     margin-bottom: -23px;
   }
 
