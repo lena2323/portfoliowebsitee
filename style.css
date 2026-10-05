@@ -37,6 +37,11 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+a {
+  color: var(--clr-accent);
+  font-weight: 700;
+}
+
 input,
 textarea {
   padding-left: 10px;
@@ -610,8 +615,8 @@ code {
 }
 
 .mainfooter img:active {
-  -webkit-filter: drop-shadow(2px 2px 1px rgb(1, 117, 108));
-  filter: drop-shadow(2px 2px 1px rgb(1, 117, 108));
+  -webkit-filter: drop-shadow(2px 2px 1px var(--clr-accent2));
+  filter: drop-shadow(2px 2px 1px var(--clr-accent2));
 }
 
 /*****************************************/
@@ -641,51 +646,31 @@ code {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: flex-end;
   padding: 0%;
   margin: 0%;
 }
 
 .buttonContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100px;
-  height: 50px;
-  margin-top: 19px;
+  justify-content: center;
+  align-items: center;
 }
-
-.airplane {
-  padding-left: 20px;
-  margin-top: 13px;
-  padding: 23px;
-  margin-top: 10px;
-  padding-bottom: 40px;
-  padding-top: 12px;
-  border: none;
-  color: black;
-  background-image: linear-gradient(
-    to right,
-    var(--clr-main) 0%,
-    var(--clr-main2) 60%,
-    var(--clr-main) 100%
-  );
-  flex: 1 1 1;
-  transition: 0.5s;
-  background-size: 160% auto;
-  border-radius: 10px;
+.buttonContainer button {
+  border: 0;
+  margin-bottom: 24px;
 }
-
+.buttonContainer button:hover {
+  text-shadow: 5px 2px 3px var(--clr-accent);
+}
+.buttonContainer button:active {
+  text-shadow: 5px 2px 3px var(--clr-accent2);
+}
+.buttonContainer i {
+  font-size: 30px;
+}
 button:hover {
   background-position: right center;
-}
-
-.airplane:active {
-  background-image: linear-gradient(
-    to right,
-    #638174 0%,
-    var(--clr-main2) 60%,
-    #638174 100%
-  );
 }
 
 input[type="email"] {
@@ -1033,7 +1018,7 @@ textarea::placeholder {
 }
 
 .download-button:active:focus {
-  background-color: #8ca098;
+  background-color: var(--clr-accent2);
   color: white;
 }
 
@@ -1395,6 +1380,9 @@ textarea::placeholder {
     width: auto;
     max-width: 400px;
   }
+  .singleProjectContainer {
+    width: 100%;
+  }
   .containerImagesForTools {
     flex-direction: column;
     margin: auto;
@@ -1487,40 +1475,9 @@ textarea::placeholder {
   }
 
   /*****************************************/
-
-  .buttonContainer {
-    display: flex;
-    align-content: flex-end;
-    min-width: 765px;
-    max-height: 100px;
-    margin-top: 19px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    max-width: 100px;
-    max-height: 50px;
-    margin-top: 19px;
+  .buttonContainer button {
+    margin-top: 24px;
   }
-
-  .airplane {
-    padding: 10px;
-    margin: auto;
-    border: none;
-    color: black;
-    background-image: linear-gradient(
-      to right,
-      var(--clr-main) 0%,
-      var(--clr-main2) 51%,
-      var(--clr-main) 100%
-    );
-    flex: 1 1 1;
-    transition: 0.5s;
-    background-size: 160% auto;
-    border-radius: 10px;
-    width: 100px;
-  }
-
   /*****************************************/
   /****************PROJECTS*****************/
   /*****************************************/
