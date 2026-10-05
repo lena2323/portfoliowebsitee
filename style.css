@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
 
 :root {
   --clr-main: #adc0b8;
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Philosopher", sans-serif;
+  font-family: "Vollkorn", serif;
   background-color: var(--clr-main);
   margin: 0;
   overflow-x: hidden;
@@ -74,8 +74,14 @@ html {
   top: 0;
 }
 
+.navbar h3 {
+  font-family: "Vollkorn", serif;
+  text-shadow: none;
+}
+
 .navbar .logotext {
-  font-family: "Monoton", cursive;
+  font-family: "Vollkorn", serif;
+  text-shadow: none;
   font-size: 20px;
   text-decoration: none;
   color: var(--clr-main2);
@@ -83,7 +89,6 @@ html {
   margin-top: -30px;
   margin-bottom: 6px;
   background-color: var(--clr-main);
-  text-shadow: 3px 2px 6px #000000;
   padding: 2px 6px;
 }
 .navbar .logotext:hover {
@@ -843,7 +848,7 @@ a.underlinewooshNaslovi:before {
   width: 100vw;
   height: auto;
   position: relative;
-  top: 2px;
+  top: 4px;
 }
 /************ANIMATION on the banner****************/
 
