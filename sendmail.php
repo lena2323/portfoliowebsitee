@@ -24,7 +24,7 @@ $emailBody =
     "Subject: " . $subject . "\n\n" .
     "Message:\n" . $message;
 
-$headers = "From: Rogue Gone Awol <noreply@roguegoneawol.com>\r\n";
+$headers = "From: roguegoneawol <noreply@roguegoneawol.com>\r\n";
 $headers .= "Reply-To: " . $email . "\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
@@ -61,7 +61,7 @@ if (mail($to, $emailSubject, $emailBody, $headers)) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Message Sent | Rogue Gone Awol</title>
+        <title>Message Sent | roguegoneawol</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
