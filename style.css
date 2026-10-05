@@ -950,6 +950,10 @@ a.underlinewooshNaslovi:before {
   margin-bottom: 90px !important;
 }
 
+.swiper p {
+  font-size: 12px;
+}
+
 .swiper-wrapper {
   margin-bottom: 50px;
   max-width: 100%;
