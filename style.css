@@ -1621,6 +1621,9 @@ textarea::placeholder {
   }
 }
 @media only screen and (max-width: 500px) {
+  .projects {
+    padding: 0;
+  }
   .sectionInExperience,
   .singleProjectContainer {
     max-width: 250px;
