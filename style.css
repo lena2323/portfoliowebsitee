@@ -1620,3 +1620,10 @@ textarea::placeholder {
     }
   }
 }
+@media only screen and (max-width: 500px) {
+  .sectionInExperience,
+  .singleProjectContainer {
+    max-width: 250px;
+    width: 100%;
+  }
+}
