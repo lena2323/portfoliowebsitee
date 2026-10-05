@@ -77,20 +77,20 @@ if (mail($to, $emailSubject, $emailBody, $headers)) {
             <p>
                 You will be automatically redirected to the homepage
                 in a few seconds.<br>
-
-                If you are not redirected automatically please 
+                If you are not redirected automatically please <br>
                 <a href="/" class="btn-link">click here</a>.
             </p>
         </div>
     <style>
             body {
                 margin: 0;
-                height: 100vh;
+                height: auto;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 padding:20px;
                 text-align:center;
+                margin-top: 140px;
             }
 
             h1 {
@@ -99,6 +99,7 @@ if (mail($to, $emailSubject, $emailBody, $headers)) {
 
             p {
                 margin: 0;
+                margin-top: 8px;
             }
 
             a{
