@@ -734,6 +734,7 @@ textarea {
   border: none;
   border-bottom: var(--clr-main) solid 1px;
   margin-bottom: -23px;
+  font-family: "Vollkorn", serif;
 }
 
 textarea:focus {
