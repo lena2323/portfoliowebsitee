@@ -68,17 +68,17 @@ if (mail($to, $emailSubject, $emailBody, $headers)) {
     <body>
 
         <div class="success-container">
-            <h2 class="success-title">
+            <h1>
                 Message successfully sent!
-            </h2>
-            <p class="success-text">
+            </h1>
+            <p>
                 Thank you for contacting me.
             </p>
-            <p class="redirect-text">
+            <p>
                 You will be automatically redirected to the homepage
                 in a few seconds.<br>
 
-                If you are not redirected automatically,
+                If you are not redirected automatically please 
                 <a href="/" class="btn-link">click here</a>.
             </p>
         </div>
@@ -93,16 +93,16 @@ if (mail($to, $emailSubject, $emailBody, $headers)) {
                 text-align: center;
             }
 
-            .message {
-                padding: 40px 20px;
-            }
-
             h1 {
                 margin-bottom: 15px;
             }
 
             p {
-                margin: 8px 0;
+                margin: 0;
+            }
+
+            a{
+                color:#ef83ab;
             }
         </style>
     </body>
