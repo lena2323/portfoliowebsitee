@@ -1,4 +1,3 @@
-
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
@@ -62,8 +61,59 @@ $confirmationHeaders .= "Reply-To: noreply@roguegoneawol.com\r\n";
 $confirmationHeaders .= "MIME-Version: 1.0\r\n";
 $confirmationHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-mail($email, $confirmationSubject, $confirmationBody, $confirmationHeaders);
+mail(
+    $email,
+    $confirmationSubject,
+    $confirmationBody,
+    $confirmationHeaders
+);
 
-header("Location: /success.html");
+echo '
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Message Sent | Rogue Gone Awol</title>
+
+    <meta http-equiv="refresh" content="3;url=/success.html">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .message {
+            padding: 40px 20px;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="message">
+        <h1>Message sent!</h1>
+        <p>Thank you for contacting me.</p>
+        <p>Redirecting you...</p>
+    </div>
+
+</body>
+</html>
+';
+
 exit;
-?>
