@@ -64,7 +64,6 @@ $confirmationHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 mail($email, $confirmationSubject, $confirmationBody, $confirmationHeaders);
 
-header("Location: /success");
+header("Location: /success.html");
 exit;
-
 ?>
