@@ -90,6 +90,7 @@ if (mail($to, $emailSubject, $emailBody, $headers)) {
                 align-items: center;
                 justify-content: center;
                 padding:20px;
+                text-align:center;
             }
 
             h1 {
