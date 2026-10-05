@@ -85,12 +85,11 @@ if (mail($to, $emailSubject, $emailBody, $headers)) {
     <style>
             body {
                 margin: 0;
-                min-height: 100vh;
+                height: 100vh;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-family: Arial, sans-serif;
-                text-align: center;
+                padding:20px;
             }
 
             h1 {
