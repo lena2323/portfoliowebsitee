@@ -1372,8 +1372,9 @@ textarea::placeholder {
 
   .aboutMeContainer img {
     margin-top: 80px;
-    max-width: 300px;
-    padding-right: 20px;
+    max-width: unset;
+    padding: 0 20px;
+    width: 100%;
   }
 
   .sectionInExperience,
