@@ -9,7 +9,38 @@
       name="description"
       content="roguegoneawol | Smederevska Palanka | web developer | Milenija Jovicic"
     />
+    <meta name="robots" content="index, follow" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="roguegoneawol | Web Developer" />
+    <meta
+      property="og:image"
+      content="https://roguegoneawol.com/images/og-image.jpg"
+    />
+    <meta
+      property="og:description"
+      content="roguegoneawol | Smederevska Palanka | web developer | Milenija Jovicic"
+    />
+    <meta property="og:site_name" content="roguegoneawol" />
+    <meta property="og:url" content="https://roguegoneawol.com/" />
+    <meta
+      name="keywords"
+      content="frontend developer, react developer, javascript developer, web developer, roguegoneawol, Milenija Jovicic"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Milenija Jovicic",
+        "url": "https://roguegoneawol.com/",
+        "jobTitle": "Web Developer",
+        "sameAs": [
+          "https://github.com/lena2323",
+          "https://www.linkedin.com/in/milenija-jovi%C4%8Di%C4%87-2a2952234/"
+        ]
+      }
+    </script>
     <script
       src="https://kit.fontawesome.com/cd16fb53d7.js"
       crossorigin="anonymous"
@@ -18,6 +49,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="canonical" href="https://roguegoneawol.com/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,13 +70,16 @@
   </head>
   <body>
     <div id="top"></div>
-    <nav class="navbar" id="navbar">
+    <header class="navbar" id="navbar">
       <img
         src="./images/Picture1.png"
         class="navbarBgImg"
         alt="navbar background image"
+        fetchpriority="high"
       />
-      <a href="index.html" class="logotext">roguegoneawol</a>
+      <a href="index.html" class="logotext" title="roguegoneawol"
+        >roguegoneawol</a
+      >
       <div class="hamburgerContainer" id="hamburgerContainer">
         <div class="hamburger active notActive" id="hamburger">
           <span></span>
@@ -52,26 +87,39 @@
           <span></span>
         </div>
       </div>
-      <ul id="nav-ul" class="nav-ul">
-        <li class="navItems">
-          <a href="#about-me-for-nav-link" id="nav-link1"><h3>About</h3></a>
-        </li>
-        <li class="navItems">
-          <a href="#stack-for-nav-link" id="nav-link2"><h3>My stack</h3></a>
-        </li>
-        <li class="navItems">
-          <a href="#experience-for-nav-link" id="nav-link-Exp"
-            ><h3>Experience</h3></a
-          >
-        </li>
-        <li class="navItems">
-          <a href="#projects-for-nav-link" id="nav-link3"><h3>Projects</h3></a>
-        </li>
-        <li class="navItems">
-          <a href="#contact-for-nav-link" id="nav-link4"><h3>Contact</h3></a>
-        </li>
-      </ul>
-    </nav>
+      <navbar>
+        <ul id="nav-ul" class="nav-ul">
+          <li class="navItems">
+            <a href="#about-me-for-nav-link" id="nav-link1" title="About"
+              ><h3>About</h3></a
+            >
+          </li>
+          <li class="navItems">
+            <a href="#stack-for-nav-link" id="nav-link2" title="My stack"
+              ><h3>My stack</h3></a
+            >
+          </li>
+          <li class="navItems">
+            <a
+              href="#experience-for-nav-link"
+              id="nav-link-Exp"
+              title="Experience"
+              ><h3>Experience</h3></a
+            >
+          </li>
+          <li class="navItems">
+            <a href="#projects-for-nav-link" id="nav-link3" title="Projects"
+              ><h3>Projects</h3></a
+            >
+          </li>
+          <li class="navItems">
+            <a href="#contact-for-nav-link" id="nav-link4" title="Contact"
+              ><h3>Contact</h3></a
+            >
+          </li>
+        </ul>
+      </navbar>
+    </header>
 
     <div class="banner">
       <div class="bannerH1Container">
@@ -89,8 +137,11 @@
         >
           <span>And I live by the river.</span>
         </p>
+        <h1 class="tracking-in-expand cursor-text" data-text="roguegoneawol">
+          - <span>roguegoneawol</span> -
+        </h1>
       </div>
-      <a class="arrow" href="#about-me-for-nav-link">
+      <a class="arrow" href="#about-me-for-nav-link" title="Menu">
         <span></span>
         <span></span>
         <span></span>
@@ -126,6 +177,7 @@
           src="images/aboutme.gif"
           class="scroll-element js-scroll fade-in-bottom"
           alt="about me section image"
+          loading="lazy"
         />
       </div>
     </section>
@@ -136,6 +188,7 @@
         class="sectionDivider1"
         src="./images/testnavbar-mirror.png"
         alt="page divider image"
+        loading="lazy"
       />
     </div>
 
@@ -178,25 +231,25 @@
           </div>
 
           <div class="swiper-slide">
-            <img src="images/muilogo.png" alt="Material UI" />
+            <img src="images/muilogo.png" alt="Material UI" loading="lazy" />
           </div>
 
           <div class="swiper-slide">
-            <img src="images/tailwind.png" alt="Tailwind CSS" />
+            <img src="images/tailwind.png" alt="Tailwind CSS" loading="lazy" />
           </div>
 
           <div class="swiper-slide">
-            <img src="images/eslint.png" alt="eslint" />
+            <img src="images/eslint.png" alt="eslint" loading="lazy" />
           </div>
 
           <div class="swiper-slide">
-            <img src="images/dotnet.png" alt=".NET" />
+            <img src="images/dotnet.png" alt=".NET" loading="lazy" />
           </div>
           <div class="swiper-slide">
-            <img src="images/php.png" alt="PHP" />
+            <img src="images/php.png" alt="PHP" loading="lazy" />
           </div>
           <div class="swiper-slide">
-            <img src="images/sql.png" alt="SQL" />
+            <img src="images/sql.png" alt="SQL" loading="lazy" />
           </div>
           <div class="swiper-slide">
             <p>
@@ -219,6 +272,7 @@
         class="sectionDivider2"
         src="./images/testnavbar.png"
         alt="page divider image"
+        loading="lazy"
       />
     </div>
     <div class="experienceH2Wrapper">
@@ -326,6 +380,7 @@
         class="sectionDivider1"
         src="./images/testnavbar-mirror.png"
         alt="page divider image"
+        loading="lazy"
       />
     </div>
     <div class="textInH2Wrapper">
@@ -336,16 +391,21 @@
         <div
           class="singleProjectContainer scroll-element js-scroll fade-in-bottom"
         >
-          <a href="https://cute-shortbread-e068d1.netlify.app/" target="_blank"
+          <a
+            href="https://cute-shortbread-e068d1.netlify.app/"
+            target="_blank"
+            title="Spn Quiz"
             ><img
               src="images/spn.gif"
               class="imageInProjects"
               alt="projects section image"
+              loading="lazy"
           /></a>
           <a
             class="textInProjects links"
             href="https://cute-shortbread-e068d1.netlify.app/"
             target="_blank"
+            title="Spn Quiz"
             ><h4>Supernatural Quiz</h4></a
           >
           <p>
@@ -357,16 +417,18 @@
         <div
           class="singleProjectContainer scroll-element js-scroll fade-in-bottom"
         >
-          <a href="https://sprightly-gecko-f63ae1.netlify.app/"
+          <a href="https://sprightly-gecko-f63ae1.netlify.app/" title="Api quiz"
             ><img
               src="images/Api quiz.gif"
               class="imageInProjects"
               alt="api quiz"
+              loading="lazy"
           /></a>
           <a
             class="textInProjects links"
             href="https://sprightly-gecko-f63ae1.netlify.app/"
             target="_blank"
+            title="Api quiz"
             ><h4>Trivia Quiz</h4></a
           >
           <p>
@@ -378,16 +440,20 @@
         <div
           class="singleProjectContainer scroll-element js-scroll fade-in-bottom"
         >
-          <a href="https://precious-snickerdoodle-0606cb.netlify.app/"
+          <a
+            href="https://precious-snickerdoodle-0606cb.netlify.app/"
+            title="Feast roadhouse"
             ><img
               src="images/feastr.gif"
               class="imageInProjects"
               alt="feast roadhouse"
+              loading="lazy"
           /></a>
           <a
             class="textInProjects links"
             href="https://precious-snickerdoodle-0606cb.netlify.app/"
             target="_blank"
+            title="Feast roadhouse"
             ><h4>Feast Roadhouse</h4></a
           >
           <p>
@@ -400,16 +466,21 @@
         <div
           class="singleProjectContainer scroll-element js-scroll fade-in-bottom"
         >
-          <a href="https://tubular-mousse-1e8a79.netlify.app/" target="_blank"
+          <a
+            href="https://tubular-mousse-1e8a79.netlify.app/"
+            target="_blank"
+            title="death and taxes"
             ><img
               src="images/taxes.gif"
               class="imageInProjects"
               alt="death and taxes"
+              loading="lazy"
           /></a>
           <a
             class="textInProjects links"
             href="https://tubular-mousse-1e8a79.netlify.app/"
             target="_blank"
+            title="death and taxes"
             ><h4>Death and Taxes</h4></a
           >
           <p>Calculate your yearly, monthly, weeksly taxes.</p>
@@ -418,16 +489,21 @@
         <div
           class="singleProjectContainer scroll-element js-scroll fade-in-bottom"
         >
-          <a href="https://jade-alpaca-59a262.netlify.app/" target="_blank"
+          <a
+            href="https://jade-alpaca-59a262.netlify.app/"
+            target="_blank"
+            title="portfolio"
             ><img
               src="images/portfolio.gif"
               class="imageInProjects"
               alt="portfolio"
+              loading="lazy"
           /></a>
           <a
             class="textInProjects links"
             href="https://jade-alpaca-59a262.netlify.app/"
             target="_blank"
+            title="portfolio"
             ><h4>Portfolio website</h4></a
           >
           <p>
@@ -438,16 +514,21 @@
         <div
           class="singleProjectContainer scroll-element js-scroll fade-in-bottom"
         >
-          <a href="https://northpoleboutique.netlify.app/" target="_blank"
+          <a
+            href="https://northpoleboutique.netlify.app/"
+            target="_blank"
+            title="The North Pole Boutique"
             ><img
               src="images/northpoleboutique.gif"
               class="imageInProjects"
               alt="The North Pole Boutique"
+              loading="lazy"
           /></a>
           <a
             class="textInProjects links"
             href="https://northpoleboutique.netlify.app/"
             target="_blank"
+            title="The North Pole Boutique"
             ><h4>The North Pole Boutique</h4></a
           >
           <p>Mock chrismtas toys seeling website.</p>
@@ -455,16 +536,21 @@
         <div
           class="singleProjectContainer scroll-element js-scroll fade-in-bottom"
         >
-          <a href="https://feniks026sp.com/" target="_blank"
+          <a
+            href="https://feniks026sp.com/"
+            target="_blank"
+            title="Feniks 026 SP"
             ><img
               src="images/feniks026sp.gif"
               class="imageInProjects"
               alt="Feniks 026 SP"
+              loading="lazy"
           /></a>
           <a
             class="textInProjects links"
             href="https://feniks026sp.com/"
             target="_blank"
+            title="Feniks 026 SP"
             ><h4>Feniks 026 SP</h4></a
           >
           <p>
@@ -474,13 +560,18 @@
         <div
           class="singleProjectContainer scroll-element js-scroll fade-in-bottom"
         >
-          <a href="http://inf026.runasp.net/" target="_blank"
-            ><img src="images/inf026.gif" class="imageInProjects" alt="INF026"
+          <a href="http://inf026.runasp.net/" target="_blank" title="INF026"
+            ><img
+              src="images/inf026.gif"
+              class="imageInProjects"
+              alt="INF026"
+              loading="lazy"
           /></a>
           <a
             class="textInProjects links"
             href="http://inf026.runasp.net/"
             target="_blank"
+            title="INF026"
             ><h4>INF026</h4></a
           >
           <p>
@@ -492,21 +583,29 @@
         <div
           class="singleProjectContainer scroll-element js-scroll fade-in-bottom"
         >
-          <a href="https://vulicevicautocentar.netlify.app/" target="_blank"
+          <a
+            href="https://vulicevicautocentar.netlify.app/"
+            target="_blank"
+            title="Vulicevic Auto Centar"
             ><img
               src="images/vulicevicautoservis.gif"
               class="imageInProjects"
               alt="Vulicevic Auto Centar"
+              loading="lazy"
           /></a>
           <a
             class="textInProjects links"
             href="https://vulicevicautocentar.netlify.app/"
             target="_blank"
+            title="Vulicevic Auto Centar"
             ><h4>Vulicevic Auto Centar</h4></a
           >
           <p>
             Redesigned website for
-            <a href="https://www.vulicevicautocentar.rs/" target="_blank"
+            <a
+              href="https://www.vulicevicautocentar.rs/"
+              target="_blank"
+              title="Vulicevic Auto Centar original website"
               >Vulicevic Auto Centar</a
             >, a car service and repair shop in Smederevska Palanka, Serbia.
             They still don't know about it.
@@ -522,6 +621,7 @@
         class="sectionDivider2"
         src="./images/testnavbar.png"
         alt="page divider image"
+        loading="lazy"
       />
     </div>
 
@@ -582,8 +682,12 @@
     <div class="scroll-up-button-container">
       <a
         href="#top"
+        title="scroll to top"
         class="scroll-up-button scroll-element js-scroll fade-in-bottom"
-        ><img src="images/icons8-scroll-up-96.png" alt="arrow up"
+        ><img
+          src="images/icons8-scroll-up-96.png"
+          alt="arrow up"
+          loading="lazy"
       /></a>
     </div>
 
@@ -602,6 +706,7 @@
         class="sectionDivider1"
         src="./images/testnavbar-mirror.png"
         alt="page divider image"
+        loading="lazy"
       />
     </div>
     <footer class="mainfooter">
@@ -609,12 +714,12 @@
         <a
           href="https://github.com/lena2323"
           title="Github - I have no idea what I have public to be honest, might be just cricket sounds there, becuase I have hundreds of unfinished projects and they're all private - gotta hide the shame lol."
-          ><img src="images/github.png" alt="github"
+          ><img src="images/github.png" alt="github" loading="lazy"
         /></a>
         <a
           href="https://www.linkedin.com/in/milenija-jovi%C4%8Di%C4%87-2a2952234/"
           title="Find me on linkedin - take a look at my 'open to work' banner and cry with me."
-          ><img src="images/linkedin.png" alt="linkedin"
+          ><img src="images/linkedin.png" alt="linkedin" loading="lazy"
         /></a>
       </div>
       <p class="footerText">Copyright &#169; 2026 Milenija Jovicic</p>

@@ -1,9 +1,4 @@
 User-agent: *
+Allow: /
 
-Disallow: /Cache/
-
-Disallow: /Images/
-
-Disallow: /Inc/
-
-Disallow: /Content/
+Sitemap: https://roguegoneawol.com/sitemap.xml
