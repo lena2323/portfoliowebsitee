@@ -70,7 +70,7 @@ html {
 
 /* Hide navbar */
 .navbar.navbar-hidden {
-  transform: translateY(calc(-100% - 60px));
+  transform: translateY(calc(-100% - 128px));
 }
 
 .navbarBgImg {
