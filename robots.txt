@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /Cache/
+
+Disallow: /Images/
+
+Disallow: /Inc/
+
+Disallow: /Content/
