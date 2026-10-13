@@ -112,6 +112,10 @@ html {
   text-shadow: none;
 }
 
+.navbar h3:active {
+  text-shadow: 5px 2px 3px var(--clr-accent2);
+}
+
 .navbar .logotext {
   font-family: var(--font-display);
   font-style: italic;
