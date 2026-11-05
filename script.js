@@ -123,3 +123,7 @@ cursorTexts.forEach((cursorText) => {
 });
 
 /* airplane animation */
+
+/* contact form spam trap: bots that post directly never get this value */
+const formTs = document.getElementById("form-ts");
+if (formTs) formTs.value = Math.floor(Date.now() / 1000);

@@ -830,6 +830,28 @@
       <div class="textInH2Wrapper">
         <h2 class="textInH2">Contact me</h2>
       </div>
+      <!-- spam traps: real people never fill the hidden field, the timestamp is set by script.js -->
+      <div
+        class="hp-field"
+        aria-hidden="true"
+        style="
+          position: absolute;
+          left: -9999px;
+          width: 1px;
+          height: 1px;
+          overflow: hidden;
+        "
+      >
+        <label for="website">Leave this empty</label>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          tabindex="-1"
+          autocomplete="off"
+        />
+      </div>
+      <input type="hidden" name="form_ts" id="form-ts" value="" />
       <div class="nameAndEmailForm">
         <div class="formtypes">
           <p class="underlinewooshContact">
@@ -877,6 +899,15 @@
             <i class="fa-solid fa-paper-plane"></i>
           </button>
         </div>
+      </div>
+
+      <!-- Cloudflare Turnstile captcha, replace YOUR_SITE_KEY with the key from dash.cloudflare.com -->
+      <div class="captcha">
+        <div
+          class="cf-turnstile"
+          data-sitekey="0x4AAAAAAF00wVhYxfPstUk-"
+          data-theme="light"
+        ></div>
       </div>
     </form>
 
@@ -927,6 +958,11 @@
     </footer>
 
     <script src="script.js"></script>
+    <script
+      src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+      async
+      defer
+    ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
